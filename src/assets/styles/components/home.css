@@ -1,0 +1,29 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0.5rem 12.5vw 0 12.5vw;
+  padding: 2rem 3rem 3rem 2rem;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem;
+}
+.gym-symbol {
+  height: 62px;
+}
+.banner {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background-soft);
+  width: 100%;
+}
+.expandable-label {
+  display: flex;
+  align-items: center;
+}

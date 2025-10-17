@@ -1,0 +1,41 @@
+.expandable {
+  width: 90%;
+  max-width: 900px;
+}
+
+.expand-btn {
+  background: var(--color-background);
+  color: var(--color-text);
+  border: none;
+  padding: 0.9rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.expand-btn:hover {
+  background: var(--color-background-mute);
+}
+
+.expand-content {
+  background: var(--color-background-soft);
+  color: var(--color-text);
+  margin-top: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 0.3s ease;
+  max-height: 600px;
+}
+.expand-enter-from,
+.expand-leave-to {
+  opacity: 0;
+  max-height: 0;
+}
