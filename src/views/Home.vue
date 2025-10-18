@@ -29,7 +29,7 @@ const themeImage = computed(() =>
         <p>Six Pillars é um time de médio custo e alto retorno.</p>
         <p>Escolha qual variação irá utilizar:</p>
         <ul>
-          <li><router-link to="/Rota-Basica">Rota Básica</router-link></li>
+          <li><router-link to="/PokeMMOCentral/Rota-Basica">Rota Básica</router-link></li>
           <li>Rota Padrão</li>
           <li>Rota Técnina</li>
           <li>Rota veterana</li>

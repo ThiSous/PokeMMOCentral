@@ -102,7 +102,7 @@ a:hover {
   background-color: var(--color-background);
   color: var(--color-text);
   margin: 0.5rem 7.5vw 0 7.5vw;
-  padding: 2rem 3rem 3rem 2rem;
+  padding: 2rem 3rem 2rem 3rem;
 }
 
 .title {
@@ -110,18 +110,19 @@ a:hover {
   margin: 2rem;
 }
 
-p>img {
+p > img {
   vertical-align: middle;
-  margin: 0 4px; 
+  margin: 0 4px;
 }
 
-h2>img {
-  vertical-align: middle; 
-  margin: 0 4px; 
+h2 > img {
+  vertical-align: middle;
+  margin: 0 4px;
 }
 
-.route h2>img,.route p>img{
-  height: 50px;   
+.route h2 > img,
+.route p > img {
+  height: 50px;
 }
 
 body {
@@ -146,11 +147,27 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition:
     background 0.3s,
-    color 0.3s; 
+    color 0.3s;
+}
+
+@media (max-width: 500px) {
+  .background {
+    margin: 0.25rem 3.75vw 0 3.75vw;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+  p{
+    font-size: 12px;
+  }
+  h2{
+    font-size: 16px;
+  }
+  h1{
+    font-size: 20px;
+  }
 }

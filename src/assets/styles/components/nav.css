@@ -1,10 +1,11 @@
 .nav {
   display: flex;
   background-color: var(--color-background);
-  height: 5rem;
+  min-height: 5rem;
   align-items: center;
   padding-left: calc(12.5vw + 25px);
   justify-content: space-between;
+  flex-wrap: wrap;
 
   img {
     width: 12rem;
@@ -16,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 25px;
   flex-direction: row;
   width: 30vw;
   height: 100%;

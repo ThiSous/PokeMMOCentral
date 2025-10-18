@@ -303,7 +303,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
             <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-            Lance
+          • Lance
             <img
               alt="Vanilluxe"
               src="https://img.pokemondb.net/sprites/black-white/anim/normal/vanilluxe.gif"
@@ -325,7 +325,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-            Lance
+          • Lance
             <img
               alt="Typhlosion"
               src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
@@ -603,7 +603,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1+: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-            Lance
+          • Lance
             <img
               alt="Typhlosion"
               src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
@@ -625,7 +625,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1+: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-            Lance
+          • Lance
             <img
               alt="Typhlosion"
               src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
@@ -677,7 +677,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1: <span class="fire">Eruption</span> + <span class="dragon">Earthquake</span>
           </h2>
           <h2 class="moves">
-            Lance
+          • Lance
             <img
               alt="Togekiss"
               src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
@@ -751,7 +751,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-            Lance
+          • Lance
             <img
               alt="Togekiss"
               src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
@@ -778,7 +778,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-            Lance
+          • Lance
             <img
               alt="Typhlosion"
               src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"

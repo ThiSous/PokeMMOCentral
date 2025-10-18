@@ -11,12 +11,12 @@ const routes: Array<RouteRecordRaw> = [
     component: Home,
   },
   {
-    path: '/Sobre',
+    path: '/PokeMMOCentral/Sobre',
     name: 'Sobre',
     component: About,
   },
   {
-    path: '/Rota-Basica',
+    path: '/PokeMMOCentral/Rota-Basica',
     name: 'Rota Básica',
     component: BasicRoute,
   },
