@@ -1,0 +1,16 @@
+
+.gym-symbol {
+  height: 62px;
+}
+.banner {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background-soft);
+  width: 100%;
+}
+.expandable-label {
+  display: flex;
+  align-items: center;
+}

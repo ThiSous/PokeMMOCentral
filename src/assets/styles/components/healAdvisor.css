@@ -1,0 +1,10 @@
+.healAdvisor{
+    border-radius: 5px;
+    width: 100%;
+    
+    border-style: solid;
+    color: #0fa501;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}

@@ -95,12 +95,41 @@ a:hover {
   color: var(--color-link-hover);
 }
 
+.background {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0.5rem 7.5vw 0 7.5vw;
+  padding: 2rem 3rem 3rem 2rem;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem;
+}
+
+p>img {
+  vertical-align: middle;
+  margin: 0 4px; 
+}
+
+h2>img {
+  vertical-align: middle; 
+  margin: 0 4px; 
+}
+
+.route h2>img,.route p>img{
+  height: 50px;   
+}
+
 body {
   background-image: url('@/assets/images/background-poke.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; /* 🔒 fixa o fundo */
+  background-attachment: fixed;
   min-height: 100vh;
   color: var(--color-text);
   line-height: 1.6;
@@ -123,5 +152,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   transition:
     background 0.3s,
-    color 0.3s; /* suave na troca */
+    color 0.3s; 
 }

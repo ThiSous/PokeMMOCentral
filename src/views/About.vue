@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import ExpandableSection from './ExpandableSection.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="background">
@@ -23,18 +21,18 @@ import ExpandableSection from './ExpandableSection.vue'
     <p>
       Estou fazendo faculdade na área de TI e tenho interesse em desenvolvimento web, após realizar
       um upate no guia do
-      <a href="https://crescentschaos.github.io/pokemmo-resources/">Crescent Chaos</a>
+      <a target="_blank" href="https://crescentschaos.github.io/pokemmo-resources/">Crescent Chaos</a>
       eu pensei que poderia ser uma boa ideia treinar enquanto desenvolvo algo que eu goste.
     </p>
     <h2 class="title">Contato:</h2>
     <p>
       Irei receber feedback pelo github, já que não tenho esse constume então perdão por eventuais
       demoras para responder. Caso veja algo errado ou tenha alguma sugestão, fique à vontade para
-      compartilhar comigo.
+      compartilhar comigo. 
     </p>
   </div>
 </template>
 
-<style>
-@import '@/assets/styles/components/about.css';
+<style scoped>
+@import '@/assets/styles/views/about.css';
 </style>

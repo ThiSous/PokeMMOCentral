@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ExpandableSection from './ExpandableSection.vue'
+import ExpandableSection from '../components/ExpandableSection.vue'
 import { computed } from 'vue'
 import { theme } from '@/assets/styles/components/themes'
 
@@ -23,26 +23,31 @@ const themeImage = computed(() =>
         class="gym-symbol"
         src="https://play.pokemonshowdown.com/sprites/trainers/brock.png"
         alt="Brock Sprite"
-      /><ExpandableSection openLabel="▼ Gym Rerun" closeLabel="▲ Fechar guias">
-        <h2>Guia para Iniciantes</h2>
+      />
+      <ExpandableSection openLabel="▼ Gym Rerun" closeLabel="▲ Gym Rerun">
+        <h2>Six Pillars</h2>
+        <p>Six Pillars é um time de médio custo e alto retorno.</p>
+        <p>Escolha qual variação irá utilizar:</p>
+        <ul>
+          <li><router-link to="/Rota-Basica">Rota Básica</router-link></li>
+          <li><RouterLink>Rota Padrão</RouterLink></li>
+          <li><RouterLink>Rota Técnina</RouterLink></li>
+          <li><RouterLink>Rota veterana</RouterLink></li>
+        </ul>
+        <br />
+        <h2>Seven Hells</h2>
         <p>
-          Aqui você vai aprender o básico sobre como começar sua jornada, capturar pokémons e
-          explorar as regiões.
+          Seven Hells é um time de alto custo porém facil de se utilizar, sendo recomendado para
+          rotas multi-tela.
         </p>
         <ul>
-          <li>Como obter a Pokédex</li>
-          <li>Primeiras batalhas</li>
-          <li>Como funciona o sistema de níveis</li>
+          <li>Rota Única</li>
         </ul>
       </ExpandableSection>
     </div>
-
-    <ExpandableSection>
-      <p>Outro assunto</p>
-    </ExpandableSection>
   </div>
 </template>
 
-<style>
-@import '@/assets/styles/components/home.css';
+<style scoped>
+@import '@/assets/styles/views/home.css';
 </style>

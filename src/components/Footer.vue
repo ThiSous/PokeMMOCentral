@@ -4,6 +4,6 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 @import '@/assets/styles/components/footer.css';
 </style>

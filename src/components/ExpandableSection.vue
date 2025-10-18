@@ -1,7 +1,9 @@
 <template>
   <section class="expandable">
     <button class="expand-btn" @click="toggle">
-      {{ isOpen ? closeLabel : openLabel }}
+      <slot name="header">
+        {{ isOpen ? closeLabel : openLabel }}
+      </slot>
     </button>
 
     <transition name="expand">
@@ -13,11 +15,10 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
 import { ExpandableSection, type ExpandableProps } from './ExpandableSection'
 
 const props = defineProps<ExpandableProps>()
-const { isOpen, toggle, openLabel, closeLabel } = ExpandableSection(props)
+const { isOpen, toggle, openLabel, closeLabel} = ExpandableSection(props)
 </script>
 
 <style scoped>

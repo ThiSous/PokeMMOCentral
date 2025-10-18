@@ -22,6 +22,6 @@ const themeImage = computed(() =>
   </div>
 </template>
 
-<style>
+<style scoped>
 @import '@/assets/styles/components/nav.css';
 </style>
