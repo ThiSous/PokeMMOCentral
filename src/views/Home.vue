@@ -30,9 +30,9 @@ const themeImage = computed(() =>
         <p>Escolha qual variação irá utilizar:</p>
         <ul>
           <li><router-link to="/Rota-Basica">Rota Básica</router-link></li>
-          <li><RouterLink>Rota Padrão</RouterLink></li>
-          <li><RouterLink>Rota Técnina</RouterLink></li>
-          <li><RouterLink>Rota veterana</RouterLink></li>
+          <li>Rota Padrão</li>
+          <li>Rota Técnina</li>
+          <li>Rota veterana</li>
         </ul>
         <br />
         <h2>Seven Hells</h2>
