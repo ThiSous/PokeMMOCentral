@@ -6,7 +6,7 @@ import BasicRoute from '@/views/BasicRoute.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/PokeMMOCentral',
     name: 'Home',
     component: Home,
   },
@@ -26,12 +26,11 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 
-  // 👇 Adicione essa parte
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     } else {
-      return { top: 0, left: 0 } // sempre começa do topo ao trocar de página
+      return { top: 0, left: 0 }
     }
   },
 })

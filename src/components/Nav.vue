@@ -15,7 +15,7 @@ const themeImage = computed(() =>
   <div class="nav">
     <img :src="themeImage" />
     <div class="nav-items">
-      <router-link class="items" to="/">Home</router-link>
+      <router-link class="items" to="/PokeMMOCentral">Home</router-link>
       <router-link class="items" to="/sobre">Sobre</router-link>
       <ThemeToggle />
     </div>
