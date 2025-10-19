@@ -8,7 +8,7 @@ const toggleTheme = () => {
 
 <template>
   <button @click="toggleTheme">
-    {{ theme === 'light' ? '🌞' : '🌙' }}
+    <i :class="theme === 'light' ? 'fa-solid fa-lightbulb' : 'fa-regular fa-lightbulb'"></i>
   </button>
 </template>
 

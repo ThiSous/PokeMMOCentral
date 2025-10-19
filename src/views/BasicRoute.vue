@@ -2,11 +2,12 @@
 import HealAdvisor from '@/components/HealAdvisor.vue'
 import ExpandableSection from '../components/ExpandableSection.vue'
 import PokemonCard from '@/components/PokemonCard.vue'
+import PokeNameImg from '@/components/PokeNameImg.vue'
+import RegionAdvisor from '@/components/RegionAdvisor.vue'
 </script>
 
 <template>
   <div class="background">
-    <h1 class="title electric">Ainda está inacabado!!</h1>
     <h1 class="title">Six Pillars, Rota Básica:</h1>
     <a
       target="_blank"
@@ -39,7 +40,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
         ivs="IVS: HP 0-25 | DEF 0-25 | SPA 31 | SPE 31"
         type="water"
         src="https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif"
-        :moves="['Water Spout (EGG MOVE!)', 'Blizzard', 'Helping Hand', 'Fake Out']"
+        :moves="['Water Spout (EGG MOVE!!!)', 'Blizzard', 'Helping Hand', 'Fake Out']"
         pokeName="Blastoise"
       />
 
@@ -49,8 +50,8 @@ import PokemonCard from '@/components/PokemonCard.vue'
         itemImg="https://raw.githubusercontent.com/msikma/pokesprite/master/items/hold-item/choice-specs.png"
         nature="Modest"
         hability="Hustle"
-        evs="SPA 252 | SPD 6 | SPE 252"
-        ivs="SPA 31 | SPE 31"
+        evs="EVS: SPA 252 | SPD 6 | SPE 252"
+        ivs="IVS: SPA 31 | SPE 31"
         type="fly"
         src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
         :moves="['Hyper Voice', 'Helping Hand', 'Shock Wave', 'Fly']"
@@ -174,7 +175,8 @@ import PokemonCard from '@/components/PokemonCard.vue'
         <img
           src="https://raw.githubusercontent.com/msikma/pokesprite/master/items/hold-item/amulet-coin.png"
         />Amulet Coin ativo.
-      </p>
+      </p><br/>
+      <p>Editado em: 19/10/2025</p>
       <br />
     </ExpandableSection>
   </div>
@@ -183,7 +185,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
       <section class="route" id="hoenn">
         <h1 class="title">Inicio da Rota:</h1>
         <br />
-        <h1 class="title">Hoenn:</h1>
+        <RegionAdvisor region="Hoenn" />
 
         <!--Lavaridge Check-->
         <h2 class="city-title">1- Lavaridge</h2>
@@ -196,29 +198,16 @@ import PokemonCard from '@/components/PokemonCard.vue'
         <img class="puzzle" alt="puzzle de lavaridge" src="@/assets/images/lavaridge.png" />
         <h2>
           Entre com<br />
-          <img
-            alt="Blastoise"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif"
-          /><span class="water">Blastoise</span> e
-          <img
-            alt="Togekiss"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-          /><span class="fly">Togekiss</span>
+          <PokeNameImg pokeName="blastoise" pokeType="water" /> e
+          <PokeNameImg pokeName="togekiss" pokeType="fly" />
         </h2>
         <br />
         <ExpandableSection>
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/houndoom-f.gif"
-                alt="Houndoom"
-              />
-              <span class="dark">Houndoom</span> OU Lvl.85
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/arcanine.gif"
-                alt="Arcanine"
-              /><span class="fire">Arcanine</span>
+              <PokeNameImg pokeName="houndoom" pokeType="dark" /> OU Lvl.85
+              <PokeNameImg pokeName="arcanine" pokeType="fire" />
             </h2>
           </template>
           <h2 class="moves">
@@ -247,14 +236,8 @@ import PokemonCard from '@/components/PokemonCard.vue'
 
         <h2>
           Entre com<br />
-          <img
-            alt="Blastoise"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif"
-          /><span class="water">Blastoise</span> e
-          <img
-            alt="Vanilluxe"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/vanilluxe.gif"
-          /><span class="ice">Vanilluxe</span>
+          <PokeNameImg pokeName="blastoise" pokeType="water" /> e
+          <PokeNameImg pokeName="vanilluxe" pokeType="ice" />
         </h2>
         <br />
         <ExpandableSection>
@@ -265,7 +248,8 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1+: <span class="water">Water Spout</span> + <span class="fly">Blizzard</span>
           </h2>
           <h2 class="moves">
-            <span class="heal">Cure</span> quando Vanilluxe cair
+            <span class="heal">Cure</span> se
+            <PokeNameImg pokeName="vanilluxe" pokeType="ice" /> desmaiar
           </h2> </ExpandableSection
         ><br />
 
@@ -278,24 +262,15 @@ import PokemonCard from '@/components/PokemonCard.vue'
         />
         <h2>
           Entre com<br />
-          <img
-            alt="Blastoise"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif"
-          /><span class="water">Blastoise</span> e
-          <img
-            alt="Weezing"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/weezing.gif"
-          /><span class="poison">Weezing</span>
+          <PokeNameImg pokeName="blastoise" pokeType="water" /> e
+          <PokeNameImg pokeName="weezing" pokeType="poison" />
         </h2>
         <br />
         <ExpandableSection>
           <template #header>
             <h2>
               • Vs
-              <img
-                alt="Swellow"
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/swellow.gif"
-              /><span class="fly">Swellow</span>
+              <PokeNameImg pokeName="swellow" pokeType="fly" />
             </h2>
           </template>
           <h2 class="moves">
@@ -303,15 +278,9 @@ import PokemonCard from '@/components/PokemonCard.vue'
             <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-          • Lance
-            <img
-              alt="Vanilluxe"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/vanilluxe.gif"
-            /><span class="ice">Vanilluxe</span> e
-            <img
-              alt="Togekiss"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-            /><span class="fly">Togekiss</span>
+            • Lance
+            <PokeNameImg pokeName="vanilluxe" pokeType="ice" /> e
+            <PokeNameImg pokeName="togekiss" pokeType="fly" />
           </h2>
           <h2 class="moves">
             T2+: <span class="ice">Blizzard</span> + <span class="fly">Hyper Voice</span>
@@ -325,15 +294,9 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-          • Lance
-            <img
-              alt="Typhlosion"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
-            /><span class="fire">Typhlosion</span> e
-            <img
-              alt="Togekiss"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-            /><span class="fly">Togekiss</span>
+            • Lance
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+            <PokeNameImg pokeName="togekiss" pokeType="fly" />
           </h2>
           <h2 class="moves">
             T2+: <span class="fire">Eruption</span> + <span class="fly">Hyper Voice</span>
@@ -348,14 +311,8 @@ import PokemonCard from '@/components/PokemonCard.vue'
         />
         <h2>
           Entre com<br />
-          <img
-            alt="Typhlosion"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
-          /><span class="fire">Typhlosion</span> e
-          <img
-            alt="Garchomp"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/garchomp.gif"
-          /><span class="dragon">Garchomp</span>
+          <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+          <PokeNameImg pokeName="garchomp" pokeType="dragon" />
         </h2>
         <br />
         <ExpandableSection>
@@ -366,18 +323,12 @@ import PokemonCard from '@/components/PokemonCard.vue'
                 alt="Ícone de air balloon"
                 src="https://archives.bulbagarden.net/media/upload/f/f7/Dream_Air_Balloon_Sprite.png"
               />Air Ballon
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/zebstrika.gif"
-                alt="Zebstrika"
-              /><span class="electric">Zebstrika</span>
+              <PokeNameImg pokeName="zebstrika" pokeType="electric" />
             </h2>
           </template>
           <h2 class="moves">
-            T1+: <span class="fire">Eruption</span> + <span class="dragon">Troque</span> por
-            <img
-              alt="Togekiss"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-            /><span class="fly">Togekiss</span>
+            T1: <span class="fire">Eruption</span> + <span class="dragon">Troque</span> por
+            <PokeNameImg pokeName="togekiss" pokeType="fly" />
           </h2>
           <h2 class="moves">
             T2+: <span class="fire">Eruption</span> + <span class="fly">Hyper Voice</span>
@@ -402,14 +353,8 @@ import PokemonCard from '@/components/PokemonCard.vue'
         />
         <h2>
           Entre com<br />
-          <img
-            alt="Blastoise"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif"
-          /><span class="water">Blastoise</span> e
-          <img
-            alt="Weezing"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/weezing.gif"
-          /><span class="poison">Weezing</span>
+          <PokeNameImg pokeName="blastoise" pokeType="water" /> e
+          <PokeNameImg pokeName="weezing" pokeType="poison" />
         </h2>
         <br />
         <ExpandableSection>
@@ -421,9 +366,11 @@ import PokemonCard from '@/components/PokemonCard.vue'
           </h2> </ExpandableSection
         ><br />
       </section>
-
       <section class="route" id="kanto">
-        <!--Vermillion-->
+
+        <RegionAdvisor region="Kanto" />
+
+        <!--Vermillion Check-->
         <h2 class="city-title">6- Vermillion</h2>
         <img
           class="map"
@@ -432,32 +379,20 @@ import PokemonCard from '@/components/PokemonCard.vue'
         />
         <h2>
           Entre com<br />
-          <img
-            alt="Typhlosion"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
-          /><span class="fire">Typhlosion</span> e
-          <img
-            alt="Garchomp"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/garchomp.gif"
-          /><span class="dragon">Garchomp</span>
+          <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+          <PokeNameImg pokeName="garchomp" pokeType="dragon" />
         </h2>
         <br />
         <ExpandableSection>
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/politoed.gif"
-                alt="Politoed"
-              /><span class="water">Politoed</span>
+              <PokeNameImg pokeName="politoed" pokeType="water" />
             </h2>
           </template>
           <h2 class="moves">
             T1: <span class="fire">Swift</span> + <span class="dragon">Earthquake</span>, lance
-            <img
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/vanilluxe.gif"
-              alt="Vanilluxe"
-            /><span class="ice">Vanilluxe</span>
+            <PokeNameImg pokeName="vanilluxe" pokeType="ice" />
           </h2>
           <h2 class="moves">
             T2+: <span class="ice">Blizzard</span> + <span class="dragon">Earthquake</span>
@@ -465,11 +400,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
           <br />
           <h2 class="moves">
             • Lance
-            <img
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-              alt="Togekiss"
-            />
-            <span class="fly">Togekiss</span> caso <span class="ice">Vanilluxe</span> desmaie
+            <PokeNameImg pokeName="togekiss" pokeType="fly" /> caso <span class="ice">Vanilluxe</span> desmaie
           </h2>
           <br />
           <h2 class="moves">
@@ -494,40 +425,22 @@ import PokemonCard from '@/components/PokemonCard.vue'
         />
         <h2>
           Entre com<br />
-          <img
-            alt="Blastoise"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif"
-          /><span class="water">Blastoise</span> e
-          <img
-            alt="Weezing"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/weezing.gif"
-          /><span class="poison">Weezing</span>
+          <PokeNameImg pokeName="blastoise" pokeType="water" /> e
+          <PokeNameImg pokeName="weezing" pokeType="poison" />
         </h2>
         <br />
         <ExpandableSection>
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/arcanine.gif"
-                alt="Arcanine"
-              /><span class="fire">Arcanine</span> OU
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif"
-                alt="Charizard"
-              /><span class="fire">Charizard</span> OU
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
-                alt="Typhlosion"
-              /><span class="fire">Typhlosion</span>
+              <PokeNameImg pokeName="arcanine" pokeType="fire" /> OU
+              <PokeNameImg pokeName="charizard" pokeType="fire" /> OU
+              <PokeNameImg pokeName="typhlosion" pokeType="fire" />
             </h2>
           </template>
           <h2 class="moves">
             T1: <span class="water">Water Spout</span> + <span class="poison">Troque</span> para
-            <img
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/vanilluxe.gif"
-              alt="Vanilluxe"
-            /><span class="ice">Vanilluxe</span>
+            <PokeNameImg pokeName="vanilluxe" pokeType="ice" />
           </h2>
           <h2 class="moves">
             T2+: <span class="water">Water Spout</span> + <span class="ice">Blizzard</span>
@@ -538,10 +451,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/flareon.gif"
-                alt="Flareon"
-              /><span class="fire">Flareon</span>
+              <PokeNameImg pokeName="flareon" pokeType="fire" />
             </h2>
           </template>
           <h2 class="moves">
@@ -552,10 +462,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/moltres.gif"
-                alt="Moltres"
-              /><span class="fire">Moltres</span>
+              <PokeNameImg pokeName="moltres" pokeType="fire" />
             </h2>
           </template>
           <h2 class="moves">
@@ -563,10 +470,7 @@ import PokemonCard from '@/components/PokemonCard.vue'
           </h2>
           <h2 class="moves">
             • Use <span class="poison">Assurance</span> na
-            <img
-              alt="Blissey"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/blissey.gif"
-            /><span class="normal">Blissey</span>
+            <PokeNameImg pokeName="blissey" pokeType="normal" />
           </h2> </ExpandableSection
         ><br />
 
@@ -579,39 +483,24 @@ import PokemonCard from '@/components/PokemonCard.vue'
         />
         <h2>
           Entre com<br />
-          <img
-            alt="Blastoise"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif"
-          /><span class="water">Blastoise</span> e
-          <img
-            alt="Weezing"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/weezing.gif"
-          /><span class="poison">Weezing</span>
+          <PokeNameImg pokeName="blastoise" pokeType="water" /> e
+          <PokeNameImg pokeName="weezing" pokeType="poison" />
         </h2>
         <br />
         <ExpandableSection>
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/victreebel.gif"
-                alt="Victreebel"
-              /><span class="grass">Victreebel</span>
+              <PokeNameImg pokeName="victreebel" pokeType="grass" />
             </h2>
           </template>
           <h2 class="moves">
-            T1+: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
+            T1: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-          • Lance
-            <img
-              alt="Typhlosion"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
-            /><span class="fire">Typhlosion</span> e
-            <img
-              alt="Garchomp"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/garchomp.gif"
-            /><span class="dragon">Garchomp</span>
+            • Lance
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+            <PokeNameImg pokeName="garchomp" pokeType="dragon" />
           </h2>
           <h2 class="moves">
             T2+: <span class="fire">Eruption</span> + <span class="dragon">Dragon Claw</span>
@@ -625,15 +514,9 @@ import PokemonCard from '@/components/PokemonCard.vue'
             T1+: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-          • Lance
-            <img
-              alt="Typhlosion"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
-            /><span class="fire">Typhlosion</span> e
-            <img
-              alt="Togekiss"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-            /><span class="fly">Togekiss</span>
+            • Lance
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+            <PokeNameImg pokeName="togekiss" pokeType="fly" />
           </h2>
           <h2 class="moves">
             T2+: <span class="fire">Eruption</span> + <span class="fly">Hyper Voice</span>
@@ -649,39 +532,24 @@ import PokemonCard from '@/components/PokemonCard.vue'
         <h2>Puzzle: Direita-> Baixo-> Esquerda-> Esquerda</h2>
         <h2>
           Entre com<br />
-          <img
-            alt="Typhlosion"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
-          /><span class="fire">Typhlosion</span> e
-          <img
-            alt="Garchomp"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/garchomp.gif"
-          /><span class="dragon">Garchomp</span>
+          <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+          <PokeNameImg pokeName="garchomp" pokeType="dragon" />
         </h2>
         <br />
         <ExpandableSection>
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/espeon.gif"
-                alt="Espeon"
-              /><span class="psychic">Espeon</span> OU
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/wobbuffet.gif"
-                alt="Wobbuffet"
-              /><span class="psychic">Wobbuffet</span>
+              <PokeNameImg pokeName="espeon" pokeType="psychic" /> OU
+              <PokeNameImg pokeName="wobbuffet" pokeType="psychic" />
             </h2>
           </template>
           <h2 class="moves">
             T1: <span class="fire">Eruption</span> + <span class="dragon">Earthquake</span>
           </h2>
           <h2 class="moves">
-          • Lance
-            <img
-              alt="Togekiss"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-            /><span class="fly">Togekiss</span>
+            • Lance
+            <PokeNameImg pokeName="togekiss" pokeType="fly" />
           </h2>
           <h2 class="moves">
             T2+: <span class="fly">Hyper Voice</span> + <span class="dragon">Earthquake</span>
@@ -698,35 +566,24 @@ import PokemonCard from '@/components/PokemonCard.vue'
         <HealAdvisor />
 
         <!--Pewter Check-->
-        <h2 class="city-title">Pewter (Opcional, cure após caso leve dano)</h2>
+        <h2 class="city-title">10- Pewter (Opcional, cure após caso leve dano)</h2>
         <img
+        class="map"
           alt="Mapa marcando pewter"
           src="https://archives.bulbagarden.net/media/upload/8/8e/Kanto_Pewter_City_Map.png"
         />
         <h2>
           Entre com<br />
-          <img
-            alt="Blastoise"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif"
-          /><span class="water">Blastoise</span> e
-          <img
-            alt="Weezing"
-            src="https://img.pokemondb.net/sprites/black-white/anim/normal/weezing.gif"
-          /><span class="poison">Weezing</span>
+          <PokeNameImg pokeName="blastoise" pokeType="water" /> e
+          <PokeNameImg pokeName="weezing" pokeType="poison" />
         </h2>
         <br />
         <ExpandableSection>
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/golem.gif"
-                alt="Golem"
-              /><span class="rock">Golem</span> OU
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/toxicroak.gif"
-                alt="Toxicroak"
-              /><span class="poison">Toxicroak</span>
+              <PokeNameImg pokeName="golem" pokeType="rock" /> OU
+              <PokeNameImg pokeName="toxicroak" pokeType="poison" />
             </h2>
           </template>
           <h2 class="moves">
@@ -737,28 +594,17 @@ import PokemonCard from '@/components/PokemonCard.vue'
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/ludicolo.gif"
-                alt="Ludicolo"
-              /><span class="water">Ludicolo</span> OU
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/aerodactyl.gif"
-                alt="aerodactyl"
-              /><span class="poison">Aerodactyl</span>
+              <PokeNameImg pokeName="ludicolo" pokeType="water" /> OU
+              <PokeNameImg pokeName="aerodactyl" pokeType="rock" />
             </h2>
           </template>
           <h2 class="moves">
             T1: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-          • Lance
-            <img
-              alt="Togekiss"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-            /><span class="fly">Togekiss</span> e <img
-              alt="Garchomp"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/garchomp.gif"
-            /><span class="dragon">Garchomp</span>
+            • Lance
+            <PokeNameImg pokeName="togekiss" pokeType="fly" /> e
+            <PokeNameImg pokeName="garchomp" pokeType="dragon" />
           </h2>
           <h2 class="moves">
             T2+: <span class="fly">Hyper Voice</span> + <span class="dragon">Earthquake</span>
@@ -768,32 +614,766 @@ import PokemonCard from '@/components/PokemonCard.vue'
           <template #header>
             <h2>
               • Vs
-              <img
-                src="https://img.pokemondb.net/sprites/black-white/anim/normal/ludicolo.gif"
-                alt="Ludicolo"
-              /><span class="water">Swampert</span>
+              <PokeNameImg pokeName="swampert" pokeType="water" />
             </h2>
           </template>
           <h2 class="moves">
             T1: <span class="water">Water Spout</span> + <span class="poison">Explosion</span>
           </h2>
           <h2 class="moves">
-          • Lance
-            <img
-              alt="Typhlosion"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"
-            /><span class="fire">Typhlosion</span> e <img
-              alt="Garchomp"
-              src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
-            /><span class="fly">Togekiss</span>
+            • Lance
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+            <PokeNameImg pokeName="togekiss" pokeType="fly" />
           </h2>
           <h2 class="moves">
             T2+: <span class="fire">Eruption</span> + <span class="fly">Hyper Voice</span>
-          </h2> 
+          </h2> </ExpandableSection
+        ><br />
+      </section>
+      <section class="route" id="sinnoh">
+        <RegionAdvisor region="Sinnoh" />
+        <!--Eterna Check-->
+        <h2 class="city-title">11- Eterna</h2>
+        <img
+        class="map"
+          alt="mapa marcando eterna"
+          src="https://archives.bulbagarden.net/media/upload/0/0b/Sinnoh_Eterna_City_Map.png"
+        />
+        <h2>
+          Entre com<br />
+          <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+          <PokeNameImg pokeName="togekiss" pokeType="fly" />
+        </h2>
+        <br />
+        <ExpandableSection>
+          <template #header>
+            <h2>
+              • Vs
+              <PokeNameImg pokeName="ninetales" pokeType="fire" />
+            </h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="fire">Incinerate</span> + <span class="fly">Hyper Voice</span>
+          </h2>
+          <h2 class="moves">
+            T2: <span class="fire">Incinerate</span> + <span class="fly">Troque</span> para
+            <PokeNameImg pokeName="weezing" pokeType="poison" />
+          </h2>
+          <h2 class="moves">
+            T3+: <span class="fire">Incinerate</span> + <span class="poison">Assurance</span>
+          </h2>
+          <h2 class="moves">
+            • <span class="heal">Cure</span> se
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> levar dano
+          </h2> </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>
+              • Vs
+              <PokeNameImg pokeName="roserade" pokeType="grass" />
+            </h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Eruption</span> + <span class="fly">Hyper Voice</span>
+          </h2> </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>
+              • Vs
+              <PokeNameImg pokeName="whimsicott" pokeType="grass" />
+            </h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="fire">Eruption</span> + <span class="fly">Hyper Voice</span>
+          </h2>
+          <h2 class="moves">
+            T2: <span class="fire">Eruption</span> + <span class="fly">Troque</span> para
+            <PokeNameImg pokeName="weezing" pokeType="poison" />
+          </h2>
+          <h2 class="moves">
+            T3+: <span class="fire">Eruption</span> + <span class="poison">Assurance</span>
+          </h2> </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Swift</span> + <span class="fly">Hyper Voice</span>
+          </h2> </ExpandableSection
+        ><br />
+
+        <!--Veilstone Check-->
+        <h2 class="city-title">12- Veilstone</h2>
+        <img
+          class="map"
+          alt="mapa marcando veilstone"
+          src="https://archives.bulbagarden.net/media/upload/3/32/Sinnoh_Veilstone_City_Map.png"
+        />
+        <h2>
+          Entre com<br />
+          <PokeNameImg pokeName="typhlosion" pokeType="fire" /> e
+          <PokeNameImg pokeName="togekiss" pokeType="fly" />
+        </h2>
+        <br />
+        <ExpandableSection>
+          <template #header>
+            <h2>
+              • Vs
+              <PokeNameImg pokeName="infernape" pokeType="fire" />
+            </h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Eruption</span> + <span class="fly">Hyper Voice</span>
+          </h2>
+          <h2 class="moves">
+            • <span class="heal">Cure</span> se
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> levar dano
+          </h2> </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>
+              • Vs
+              <PokeNameImg pokeName="mienshao" pokeType="fighting" />
+            </h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Incinerate</span> + <span class="fly">Hyper Voice</span>
+          </h2>
+          <h2 class="moves">
+            • <span class="heal">Cure</span> se
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> levar dano
+          </h2> </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Eruption</span> + <span class="fly">Helping Hand</span>
+          </h2>
+          <h2 class="moves">
+            • <span class="heal">Cure</span> se
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> levar dano
+          </h2> </ExpandableSection
+        ><br />
+
+        <!--Oreburgh Check-->
+        <h2 class="city-title">13- Oreburgh</h2>
+        <img
+        class="map"
+          alt="mapa marcando Oreburgh"
+          src="https://archives.bulbagarden.net/media/upload/c/c0/Sinnoh_Oreburgh_City_Map.png"
+        />
+        <h2>
+          Entre com<br />
+          <PokeNameImg pokeName="blastoise" pokeType="water" /> e
+          <PokeNameImg pokeName="weezing" pokeType="poison" />
+        </h2>
+        <br />
+        <ExpandableSection>
+          <template #header>
+            <h2>
+              • Vs
+              <PokeNameImg pokeName="probopass" pokeType="rock" />
+            </h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Water Spout</span> + <span class="poison">Troque</span> para
+            <PokeNameImg pokeName="vanilluxe" pokeType="ice" />
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="water">Water Spout</span> + <span class="ice">Blizzard</span>
+          </h2> </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="water">Water Spout</span> +
+            <span class="poison">Assurance</span> (principalmente no
+            <PokeNameImg pokeName="cradily" pokeType="rock" />)
+          </h2>
+          <h2 class="moves">
+            • Lance
+            <PokeNameImg pokeName="vanilluxe" pokeType="ice" /> caso <span class="poison">Weezing</span> desmaie
+          </h2>
+          <h2 class="moves">
+            • <span class="water">Water Spout</span> + <span class="ice">Blizzard</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+
+        <!--Pastoria Check-->
+        <h2 class="city-title">14- Pastoria</h2>
+        <img class="map" src="https://archives.bulbagarden.net/media/upload/b/ba/Sinnoh_Pastoria_City_Map.png" alt="Mapa marcando Pastoria">
+        <h2>Entre com <br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Resolução Única</h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Fake Out (No Sharpedo)</span> +
+            <span class="poison">Explosion</span>
+          </h2>
+          <h2 class="moves">
+            • Lance
+            <PokeNameImg pokeName="togekiss" pokeType="fly" /> e <PokeNameImg pokeName="garchomp" pokeType="dragon" />
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fly">Hyper Voice</span> + <span class="dragon">Earthquake</span>
+          </h2>
           </ExpandableSection
         ><br />
       </section>
+      <section class="route" id="johto">
+        <RegionAdvisor region="Johto" />
 
+        <!--Cianwood Check-->
+        <h2 class="city-title">15- Cianwood</h2>
+        <img class="map" alt="mapa marcando cianwood" src="https://archives.bulbagarden.net/media/upload/d/d8/Johto_Cianwood_City_Map.png">
+        <h2>Entre com<br/> <PokeNameImg pokeName="togekiss" pokeType="fly"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Resolução Única</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fly">Hyper Voice</span> +
+            <span class="poison">Earthquake</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+
+        <!--Goldenrod Check-->
+        <h2 class="city-title">16- Goldenrod</h2>
+        <img class="map" alt="mapa marcando goldenrod" src="https://archives.bulbagarden.net/media/upload/e/ec/Johto_Goldenrod_City_Map.png">
+        <h2>Entre com<br/> <PokeNameImg pokeName="togekiss" pokeType="fly"/><span class="fly"> (Slot 1)</span> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/><span class="dragon"> (Slot 2)</span></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Resolução Única</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fly">Hyper Voice</span> +
+            <span class="dragon">Earthquake</span>
+          </h2>
+          <h2 class="moves">
+            • Lance
+            <PokeNameImg pokeName="typhlosion" pokeType="fire" /> se <PokeNameImg pokeName="garchomp" pokeType="dragon" /> desmaiar
+          </h2>
+          <h2 class="moves">
+            • <span class="fly">Hyper Voice</span> + <span class="fire">Eruption</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <HealAdvisor />
+
+        <!--Olivine Check-->
+        <h2 class="city-title">17- Olivine</h2>
+        <img class="map" alt="mapa marcando Olivine" src="https://archives.bulbagarden.net/media/upload/6/65/Johto_Olivine_City_Map.png">
+        <h2>Entre com<br/><PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>Vs <PokeNameImg pokeName="metagross" pokeType="steel"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="fire">Eruption</span> +
+            <span class="poison">Explosion</span>
+          </h2>
+          <h2 class="moves">
+            • Lance
+            <PokeNameImg pokeName="togekiss" pokeType="fly" /> e <PokeNameImg pokeName="garchomp" pokeType="dragon" />
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fly">Hyper Voice</span> + <span class="fire">Earthquake</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Eruption</span> +
+            <span class="poison">Assurance</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+
+        <!--Violet Check-->
+        <h2 class="city-title">18- Violet</h2>
+        <img class="map" alt="mapa marcando violet" src="https://archives.bulbagarden.net/media/upload/1/1f/Johto_Violet_City_Map.png">
+        <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="zapdos" pokeType="electric" /></h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="water">Water Spout</span> +
+            <span class="ice">Hyper Voice</span>
+          </h2>
+          <h2 class="moves">
+            •<span class="heal"> Cure</span> se <PokeNameImg pokeName="weezing" pokeType="poison"/> tiver se explodido em Olivine
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="water">Water Spout</span> +
+            <span class="ice">Blizzard</span>
+          </h2>
+          <h2 class="moves">
+            •<span class="heal"> Cure</span> se <PokeNameImg pokeName="weezing" pokeType="poison"/> tiver se explodido em Olivine
+          </h2>
+          </ExpandableSection
+        ><br />
+
+        <!--Blackthorn Check-->
+        <h2 class="city-title">19- Blackthorn</h2>
+        <img class="map" alt="mapa marcando blackthorn" src="https://archives.bulbagarden.net/media/upload/5/56/Johto_Blackthorn_City_Map.png">
+        <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="blastoise" pokeType="water"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Fake Out (No Blastoise)</span> +
+            <span class="poison">Explosion</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="togekiss" pokeType="fly"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fly">Hyper Voice</span> +
+            <span class="ice">Blizzard</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Water Spout</span> +
+            <span class="poison">Explosion</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="togekiss" pokeType="fly"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fly">Hyper Voice</span> +
+            <span class="ice">Blizzard</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <HealAdvisor/>
+
+        <!--Mahogany Check-->
+        <h2>20- Mahogany (Opcional)</h2>
+        <img class="map" alt="mapa marcando Mahogany" src="https://archives.bulbagarden.net/media/upload/4/46/Johto_Mahogany_Town_Map.png"></img>
+        <h2>Entre com<br/><PokeNameImg pokeName="weezing" pokeType="poison"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="articuno" pokeType="ice"/> OU <PokeNameImg pokeName="walrein" pokeType="ice"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="poison">Explosion</span> +
+            <span class="dragon">Dragon Claw (No Articuno / Walrein)</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fire">Eruption</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="froslass" pokeType="ice"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="poison">Explosion</span> +
+            <span class="dragon">Sunny Day</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="blastoise" pokeType="water"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fire">Eruption</span> +
+            <span class="water">Water Spout</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="glalie" pokeType="ice"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="poison">Explosion</span> +
+            <span class="dragon">Troque</span> por <PokeNameImg pokeName="blastoise" pokeType="water"/>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/>
+          </h2>
+          <h2 class="moves">
+            T2: <span class="fire">Eruption</span> +
+            <span class="dragon">Earthquake</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="togekiss" pokeType="fly"/>
+          </h2>
+          <h2 class="moves">
+            T3+: <span class="fly">Hyper Voice</span> +
+            <span class="dragon">Earthquake</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="mamoswine" pokeType="ice"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="poison">Explosion</span> +
+            <span class="dragon">Dragon Claw (No Mamoswine)</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="typhlosion" pokeType="fire"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="water">Water Spout</span> +
+            <span class="fire">Eruption</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <HealAdvisor />
+      </section>
+
+
+      <section class="route" id="unova">
+        <RegionAdvisor region="Unova" />
+
+        <!--Castelia Check-->
+        <h2 class="city-title">21- Castelia</h2>
+        <img alt="mapa marcando castelia" class="map" src="https://archives.bulbagarden.net/media/upload/archive/9/96/20121031180704%21Unova_Castelia_City_Map.png">
+        <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Resolução Única</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="water">Water Spout</span> +
+            <span class="ice">Blizzard</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+
+        <!--Striaton Check-->
+        <h2 class="city-title">22, 23, 24- Striaton</h2>
+        <img alt="mapa marcando castelia" class="map" src="https://archives.bulbagarden.net/media/upload/archive/d/d7/20121031221106%21Unova_Striaton_City_Map.png">        
+        <h2 class="fire">• Contra <img alt="chili" src="https://archives.bulbagarden.net/media/upload/f/f0/Spr_B2W2_Chili.png">Chili</h2>
+        <h2>Entre com<br/><PokeNameImg pokeName="togekiss" pokeType="fly"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="ninetales" pokeType="fire"/> OU <PokeNameImg pokeName="stoutland" pokeType="normal"/></h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fly">Hyper Voice</span> +
+            <span class="dragon">Helping Hand</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fly">Hyper Voice</span> +
+            <span class="dragon">Earthquake</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <h2 class="grass">• Contra <img alt="cilan" src="https://archives.bulbagarden.net/media/upload/4/4b/Spr_B2W2_Cilan.png">Cilan</h2>
+        <h2>Entre com<br/><PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="leavanny" pokeType="bug"/></h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Eruption</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Incinerate</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <h2 class="water">• Contra <img alt="cress" src="https://archives.bulbagarden.net/media/upload/c/cc/Spr_B2W2_Cress.png">Cress</h2>
+        <h2>Entre com<br/><PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="floatzel" pokeType="water"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="fire">Troque</span> por <PokeNameImg pokeName="vanilluxe" pokeType="ice"/> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="ice">Hyper Voice</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Eruption</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+
+        <!--Mistalton Check-->
+        <h2 class="city-title">25- Mistralton</h2>
+        <img class="map" alt="mapa marcando mistralton" src="https://archives.bulbagarden.net/media/upload/archive/6/62/20121031183128%21Unova_Mistralton_City_Map.png">
+        <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="braviary" pokeType="fly"/> OU <PokeNameImg pokeName="mandibuzz" pokeType="fly"/></h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="water">Water Spout</span> +
+            <span class="ice">Blizzard</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="swanna" pokeType="fly"/> OU <PokeNameImg pokeName="whimsicott" pokeType="grass"/></h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="water">Blizzard</span> +
+            <span class="ice">Blizzard</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="unfezant" pokeType="fly"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Blizzard</span> +
+            <span class="ice">Troque</span> por <PokeNameImg pokeName="weezing" pokeType="poison"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="water">Blizzard</span> +
+            <span class="poison">Assurance</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+
+        <!--Nimbasa Check-->
+        <h2 class="city-title">26- Nimbasa</h2>
+        <img class="map" alt="Mapa marcando nimbasa" src="https://archives.bulbagarden.net/media/upload/archive/1/1b/20121031183920%21Unova_Nimbasa_City_Map.png">
+        <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="emolga" pokeType="electric"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Fake Out (No Emolga)</span> +
+            <span class="poison">Explosion</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fire">Eruption</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="galvantula" pokeType="bug"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Fake Out (No Galvantula)</span> +
+            <span class="poison">Explosion</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fire">Swift</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Water Spout</span> +
+            <span class="poison">Explosion</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fire">Eruption</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <HealAdvisor />
+
+        <!--Opelucid Check-->
+        <h2 class="city-title">27- Opelucid</h2>
+        <img alt="mapa marcando opelucid" class="map" src="https://archives.bulbagarden.net/media/upload/archive/3/3d/20121031184451%21Unova_Opelucid_City_Map.png">
+        <h2>Entre com<br/><PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Resolução Única</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="fire">Eruption</span> +
+            <span class="ice">Blizzard</span>
+          </h2><br/>
+          <h2 class="moves">
+            • Se <PokeNameImg pokeName="emboar" pokeType="fire"/> sobreviver e derrubar <PokeNameImg pokeName="vanilluxe" pokeType="ice"/><br/>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="blastoise" pokeType="water"/>
+          </h2>
+          <h2 class="moves">
+            • <span class="fire">Eruption</span> +
+            <span class="water">Blizzard</span><br/>
+          </h2><br/>
+          <h2 class="moves">
+            ◇ Se <PokeNameImg pokeName="lapras" pokeType="water"/> sobreviver e derrubar <PokeNameImg pokeName="typhlosion" pokeType="fire"/><br/>
+          </h2>
+          <h2 class="moves">
+            ◇ Lance <PokeNameImg pokeName="garchomp" pokeType="dragon"/>
+          </h2>
+          <h2 class="moves">
+            ◇ <span class="dragon">Earthquake</span> +
+            <span class="ice">Blizzard</span><br/>
+          </h2><br/>
+          <h2 class="moves">
+            ▷ Se <PokeNameImg pokeName="samurott" pokeType="water"/> sobreviver e derrubar <PokeNameImg pokeName="typhlosion" pokeType="fire"/><br/>
+          </h2>
+          <h2 class="moves">
+            ▷ Lance <PokeNameImg pokeName="togekiss" pokeType="fly"/>
+          </h2>
+          <h2 class="moves">
+            ▷ <span class="fly">Hyper Voice</span> +
+            <span class="ice">Blizzard</span><br/>
+          </h2><br/>
+          <h2 class="moves">
+             <span class="heal">◈ Cure</span> caso tenha levado dano<br/>
+          </h2>
+          </ExpandableSection
+        ><br />
+
+        <!--Driftveil Check-->
+        <h2 class="city-title">28- Driftveil</h2>
+        <img class="map" alt="Mapa marcando driftveil" src="https://archives.bulbagarden.net/media/upload/archive/2/2f/20121031181657%21Unova_Driftveil_City_Map.png">
+        <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="sableye" pokeType="dark"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="water">Water Spout</span> +
+            <span class="poison">Explosion</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="togekiss" pokeType="fly"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/><br/>
+          </h2>
+          <h2 class="moves">
+            T2+ <span class="fly">Hyper Voice</span>+
+            <span class="dragon">Earthquake</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="torterra" pokeType="grass"/></h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="water">Water Spout</span> +
+            <span class="poison">Assurance</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1+: <span class="water">Water Spout</span> +
+            <span class="poison">Rain Dance</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        
+        <!--Nacrene -->
+        <h2 class="city-title">29-  Nacrene (Se tiver 2m 45s, precisa de <span class="dragon">Garchomp</span>, <span class="fire">Typhlosion</span> e <span class="poison">Weezing</span> vivos)</h2>
+        <img alt="mapa marcando nacrene" class="map" src="https://archives.bulbagarden.net/media/upload/archive/3/35/20121031183541%21Unova_Nacrene_City_Map.png">
+        <h2>Entrar com<br/><PokeNameImg pokeName="weezing" pokeType="poison"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/></h2><br/>
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs <PokeNameImg pokeName="stantler" pokeType="normal"/></h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="poison">Explosion</span> +
+            <span class="dragon">Troque</span> por <PokeNameImg pokeName="typhlosion" pokeType="fire"/>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="togekiss" pokeType="fly"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fly">Hyper Voice</span> +
+            <span class="dragon">Earthquake</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+        <ExpandableSection>
+          <template #header>
+            <h2>• Vs Outros</h2>
+          </template>
+          <h2 class="moves">
+            T1: <span class="poison">Explosion</span> +
+            <span class="dragon">Sunny day</span>
+          </h2>
+          <h2 class="moves">
+            • Lance <PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/>
+          </h2>
+          <h2 class="moves">
+            T2+: <span class="fire">Eruption</span> +
+            <span class="fly">Hyper Voice</span>
+          </h2>
+          </ExpandableSection
+        ><br />
+      </section>
     </section>
   </div>
 </template>
