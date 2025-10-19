@@ -6,24 +6,24 @@ import BasicRoute from '@/views/BasicRoute.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/PokeMMOCentral',
+    path: '/',
     name: 'Home',
     component: Home,
   },
   {
-    path: '/PokeMMOCentral/Sobre',
+    path: '/Sobre',
     name: 'Sobre',
     component: About,
   },
   {
-    path: '/PokeMMOCentral/Rota-Basica',
+    path: '/Rota-Basica',
     name: 'Rota Básica',
     component: BasicRoute,
   },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/PokeMMOCentral/'),
   routes,
 
   scrollBehavior(to, from, savedPosition) {
