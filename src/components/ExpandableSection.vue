@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { ExpandableSection, type ExpandableProps } from './ExpandableSection'
+import { ExpandableSection, type ExpandableProps } from '@/scripts/ExpandableSection.ts'
 
 const props = defineProps<ExpandableProps>()
 const { isOpen, toggle, openLabel, closeLabel} = ExpandableSection(props)

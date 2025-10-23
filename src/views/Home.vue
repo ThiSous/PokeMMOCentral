@@ -21,6 +21,18 @@ const themeImage = computed(() =>
     <div class="expandable-label">
       <img
         class="gym-symbol"
+        src="https://archives.bulbagarden.net/media/upload/e/e2/Dream_Leppa_Berry_Sprite.png"
+        alt="Leppa Sprite"
+      />
+      <ExpandableSection openLabel="▼ Farms" closeLabel="▲ Farms">
+        <ul>
+          <li><router-link to="/BerryGuide">Farm de berries</router-link></li>
+        </ul>
+      </ExpandableSection>
+    </div>
+    <div class="expandable-label">
+      <img
+        class="gym-symbol"
         src="https://play.pokemonshowdown.com/sprites/trainers/brock.png"
         alt="Brock Sprite"
       />

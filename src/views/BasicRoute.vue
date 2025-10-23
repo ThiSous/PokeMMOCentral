@@ -192,10 +192,10 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
           class="map"
           alt="Mapa marcando lavaridge"
-          src="https://archives.bulbagarden.net/media/upload/9/93/Hoenn_Lavaridge_Town_Map.png"
+          src="@/assets/images/routes/Lavaridge.png"
         />
         <p>Puzzle:</p>
-        <img class="puzzle" alt="puzzle de lavaridge" src="@/assets/images/lavaridge.png" />
+        <img class="puzzle" alt="puzzle de lavaridge" src="@/assets/images/lavaridge-puzzle.png" />
         <h2>
           Entre com<br />
           <PokeNameImg pokeName="blastoise" pokeType="water" /> e
@@ -231,7 +231,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
           class="map"
           alt="Mapa marcando cidade de Dewford"
-          src="https://archives.bulbagarden.net/media/upload/d/d3/Hoenn_Dewford_Town_Map.png"
+          src="@/assets/images/routes/Dewford.png"
         />
 
         <h2>
@@ -257,7 +257,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <h2 class="city-title">3- Fortree</h2>
         <img
           class="map"
-          src="https://archives.bulbagarden.net/media/upload/6/6a/Hoenn_Fortree_City_Map.png"
+          src="@/assets/images/routes/Fortree.png"
           alt="Mapa marcando fortree"
         />
         <h2>
@@ -306,7 +306,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <!--Mauville Check-->
         <h2 class="city-title">4- Mauville</h2>
         <img
-          src="https://archives.bulbagarden.net/media/upload/a/a1/Hoenn_Mauville_City_Map.png"
+          src="@/assets/images/routes/Mauville.png"
           class="map"
         />
         <h2>
@@ -349,7 +349,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
           class="map"
           alt="Mapa marcando rustboro"
-          src="https://archives.bulbagarden.net/media/upload/c/c8/Hoenn_Rustboro_City_Map.png"
+          src="@/assets/images/routes/Rustboro.png"
         />
         <h2>
           Entre com<br />
@@ -375,7 +375,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
           class="map"
           alt="Mapa marcando vermillion"
-          src="https://archives.bulbagarden.net/media/upload/5/54/Kanto_Vermilion_City_Map.png"
+          src="@/assets/images/routes/Vermilion.png"
         />
         <h2>
           Entre com<br />
@@ -421,7 +421,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
           class="map"
           alt="Mapa marcando cinnabar"
-          src="https://archives.bulbagarden.net/media/upload/5/58/Kanto_Cinnabar_Island_Map.png"
+          src="@/assets/images/routes/Cinnabar.png"
         />
         <h2>
           Entre com<br />
@@ -479,7 +479,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
           class="map"
           alt="mapa marcando celadon"
-          src="https://archives.bulbagarden.net/media/upload/b/bd/Kanto_Celadon_City_Map.png"
+          src="@/assets/images/routes/Celadon.png"
         />
         <h2>
           Entre com<br />
@@ -526,8 +526,8 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <!--Saffron Check-->
         <h2 class="city-title">9- Saffron</h2>
         <img
-          alt="mapa marcando saffron"
-          src="https://archives.bulbagarden.net/media/upload/6/6a/Kanto_Saffron_City_Map.png"
+          alt="mapa marcando saffron" 
+          src="@/assets/images/routes/Saffron.png"
         />
         <h2>Puzzle: Direita-> Baixo-> Esquerda-> Esquerda</h2>
         <h2>
@@ -570,7 +570,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
         class="map"
           alt="Mapa marcando pewter"
-          src="https://archives.bulbagarden.net/media/upload/8/8e/Kanto_Pewter_City_Map.png"
+          src="@/assets/images/routes/Pewter.png"
         />
         <h2>
           Entre com<br />
@@ -637,7 +637,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
         class="map"
           alt="mapa marcando eterna"
-          src="https://archives.bulbagarden.net/media/upload/0/0b/Sinnoh_Eterna_City_Map.png"
+          src="@/assets/images/routes/Eterna.png"
         />
         <h2>
           Entre com<br />
@@ -710,7 +710,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
           class="map"
           alt="mapa marcando veilstone"
-          src="https://archives.bulbagarden.net/media/upload/3/32/Sinnoh_Veilstone_City_Map.png"
+          src="@/assets/images/routes/Veilstone.png"
         />
         <h2>
           Entre com<br />
@@ -766,7 +766,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         <img
         class="map"
           alt="mapa marcando Oreburgh"
-          src="https://archives.bulbagarden.net/media/upload/c/c0/Sinnoh_Oreburgh_City_Map.png"
+          src="@/assets/images/routes/Oreburgh.png"
         />
         <h2>
           Entre com<br />
@@ -810,7 +810,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Pastoria Check-->
         <h2 class="city-title">14- Pastoria</h2>
-        <img class="map" src="https://archives.bulbagarden.net/media/upload/b/ba/Sinnoh_Pastoria_City_Map.png" alt="Mapa marcando Pastoria">
+        <img class="map" src="@/assets/images/routes/Pastoria.png" alt="Mapa marcando Pastoria">
         <h2>Entre com <br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -835,7 +835,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Cianwood Check-->
         <h2 class="city-title">15- Cianwood</h2>
-        <img class="map" alt="mapa marcando cianwood" src="https://archives.bulbagarden.net/media/upload/d/d8/Johto_Cianwood_City_Map.png">
+        <img class="map" alt="mapa marcando cianwood" src="@/assets/images/routes/Cianwood.png">
         <h2>Entre com<br/> <PokeNameImg pokeName="togekiss" pokeType="fly"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -850,7 +850,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Goldenrod Check-->
         <h2 class="city-title">16- Goldenrod</h2>
-        <img class="map" alt="mapa marcando goldenrod" src="https://archives.bulbagarden.net/media/upload/e/ec/Johto_Goldenrod_City_Map.png">
+        <img class="map" alt="mapa marcando goldenrod" src="@/assets/images/routes/Goldenrod.png">
         <h2>Entre com<br/> <PokeNameImg pokeName="togekiss" pokeType="fly"/><span class="fly"> (Slot 1)</span> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/><span class="dragon"> (Slot 2)</span></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -873,7 +873,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Olivine Check-->
         <h2 class="city-title">17- Olivine</h2>
-        <img class="map" alt="mapa marcando Olivine" src="https://archives.bulbagarden.net/media/upload/6/65/Johto_Olivine_City_Map.png">
+        <img class="map" alt="mapa marcando Olivine" src="@/assets/images/routes/Olivine.png">
         <h2>Entre com<br/><PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -905,7 +905,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Violet Check-->
         <h2 class="city-title">18- Violet</h2>
-        <img class="map" alt="mapa marcando violet" src="https://archives.bulbagarden.net/media/upload/1/1f/Johto_Violet_City_Map.png">
+        <img class="map" alt="mapa marcando violet" src="@/assets/images/routes/Violet.png">
         <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -936,7 +936,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Blackthorn Check-->
         <h2 class="city-title">19- Blackthorn</h2>
-        <img class="map" alt="mapa marcando blackthorn" src="https://archives.bulbagarden.net/media/upload/5/56/Johto_Blackthorn_City_Map.png">
+        <img class="map" alt="mapa marcando blackthorn" src="@/assets/images/routes/Blackthorn.png">
         <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -976,7 +976,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Mahogany Check-->
         <h2>20- Mahogany (Opcional)</h2>
-        <img class="map" alt="mapa marcando Mahogany" src="https://archives.bulbagarden.net/media/upload/4/46/Johto_Mahogany_Town_Map.png"></img>
+        <img class="map" alt="mapa marcando Mahogany" src="@/assets/images/routes/Mahogany.png"></img>
         <h2>Entre com<br/><PokeNameImg pokeName="weezing" pokeType="poison"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1062,7 +1062,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Castelia Check-->
         <h2 class="city-title">21- Castelia</h2>
-        <img alt="mapa marcando castelia" class="map" src="https://archives.bulbagarden.net/media/upload/archive/9/96/20121031180704%21Unova_Castelia_City_Map.png">
+        <img alt="mapa marcando castelia" class="map" src="@/assets/images/routes/Castelia.png">
         <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1077,8 +1077,8 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Striaton Check-->
         <h2 class="city-title">22, 23, 24- Striaton</h2>
-        <img alt="mapa marcando castelia" class="map" src="https://archives.bulbagarden.net/media/upload/archive/d/d7/20121031221106%21Unova_Striaton_City_Map.png">        
-        <h2 class="fire">• Contra <img alt="chili" src="https://archives.bulbagarden.net/media/upload/f/f0/Spr_B2W2_Chili.png">Chili</h2>
+        <img alt="mapa marcando castelia" class="map" src="@/assets/images/routes/Striaton.png">        
+        <h2 class="fire">• Contra <img alt="chili" src="@/assets/images/routes/Chili.png">Chili</h2>
         <h2>Entre com<br/><PokeNameImg pokeName="togekiss" pokeType="fly"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1100,7 +1100,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
           </h2>
           </ExpandableSection
         ><br />
-        <h2 class="grass">• Contra <img alt="cilan" src="https://archives.bulbagarden.net/media/upload/4/4b/Spr_B2W2_Cilan.png">Cilan</h2>
+        <h2 class="grass">• Contra <img alt="cilan" src="@/assets/images/routes/Cilan.png">Cilan</h2>
         <h2>Entre com<br/><PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1122,7 +1122,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
           </h2>
           </ExpandableSection
         ><br />
-        <h2 class="water">• Contra <img alt="cress" src="https://archives.bulbagarden.net/media/upload/c/cc/Spr_B2W2_Cress.png">Cress</h2>
+        <h2 class="water">• Contra <img alt="cress" src="@/assets/images/routes/Cress.png">Cress</h2>
         <h2>Entre com<br/><PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="togekiss" pokeType="fly"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1151,7 +1151,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Mistalton Check-->
         <h2 class="city-title">25- Mistralton</h2>
-        <img class="map" alt="mapa marcando mistralton" src="https://archives.bulbagarden.net/media/upload/archive/6/62/20121031183128%21Unova_Mistralton_City_Map.png">
+        <img class="map" alt="mapa marcando mistralton" src="@/assets/images/routes/Mistralton.png">
         <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1190,7 +1190,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Nimbasa Check-->
         <h2 class="city-title">26- Nimbasa</h2>
-        <img class="map" alt="Mapa marcando nimbasa" src="https://archives.bulbagarden.net/media/upload/archive/1/1b/20121031183920%21Unova_Nimbasa_City_Map.png">
+        <img class="map" alt="Mapa marcando nimbasa" src="@/assets/images/routes/Nimbasa.png">
         <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1247,7 +1247,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Opelucid Check-->
         <h2 class="city-title">27- Opelucid</h2>
-        <img alt="mapa marcando opelucid" class="map" src="https://archives.bulbagarden.net/media/upload/archive/3/3d/20121031184451%21Unova_Opelucid_City_Map.png">
+        <img alt="mapa marcando opelucid" class="map" src="@/assets/images/routes/Opelucid.png">
         <h2>Entre com<br/><PokeNameImg pokeName="typhlosion" pokeType="fire"/> e <PokeNameImg pokeName="vanilluxe" pokeType="ice"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1295,7 +1295,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
 
         <!--Driftveil Check-->
         <h2 class="city-title">28- Driftveil</h2>
-        <img class="map" alt="Mapa marcando driftveil" src="https://archives.bulbagarden.net/media/upload/archive/2/2f/20121031181657%21Unova_Driftveil_City_Map.png">
+        <img class="map" alt="Mapa marcando driftveil" src="@/assets/images/routes/Driftveil.png">
         <h2>Entre com<br/><PokeNameImg pokeName="blastoise" pokeType="water"/> e <PokeNameImg pokeName="weezing" pokeType="poison"/></h2><br/>
         <ExpandableSection>
           <template #header>
@@ -1337,7 +1337,7 @@ import RegionAdvisor from '@/components/RegionAdvisor.vue'
         
         <!--Nacrene -->
         <h2 class="city-title">29-  Nacrene (Se tiver 2m 45s, precisa de <span class="dragon">Garchomp</span>, <span class="fire">Typhlosion</span> e <span class="poison">Weezing</span> vivos)</h2>
-        <img alt="mapa marcando nacrene" class="map" src="https://archives.bulbagarden.net/media/upload/archive/3/35/20121031183541%21Unova_Nacrene_City_Map.png">
+        <img alt="mapa marcando nacrene" class="map" src="@/assets/images/routes/Nacrene.png">
         <h2>Entrar com<br/><PokeNameImg pokeName="weezing" pokeType="poison"/> e <PokeNameImg pokeName="garchomp" pokeType="dragon"/></h2><br/>
         <ExpandableSection>
           <template #header>

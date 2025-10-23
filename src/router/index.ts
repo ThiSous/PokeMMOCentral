@@ -3,6 +3,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 import BasicRoute from '@/views/BasicRoute.vue'
+import BerryGuide from '@/views/BerryGuide.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -19,6 +20,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/Rota-Basica',
     name: 'Rota Básica',
     component: BasicRoute,
+  },
+  {
+    path: '/BerryGuide',
+    name: 'Guia de berries',
+    component: BerryGuide,
   },
 ]
 

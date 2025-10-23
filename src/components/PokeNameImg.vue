@@ -13,6 +13,5 @@ defineProps<{
 </template>
 
 <style scoped>
-@import '@/assets/styles/components/pokeNameImg.css';
 @import '@/assets/styles/components/pokemon-card.css';
 </style>

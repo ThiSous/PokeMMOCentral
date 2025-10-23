@@ -1,4 +1,3 @@
-// src/components/useExpandableSection.ts
 import { ref, computed } from 'vue'
 
 export interface ExpandableProps {
