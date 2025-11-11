@@ -3,7 +3,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 import BasicRoute from '@/views/BasicRoute.vue'
-import BerryGuide from '@/views/BerryGuide.vue'
+import BerryCalculator from '@/views/BerryCalculator.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -22,9 +22,9 @@ const routes: Array<RouteRecordRaw> = [
     component: BasicRoute,
   },
   {
-    path: '/BerryGuide',
+    path: '/Berry-Calculator',
     name: 'Guia de berries',
-    component: BerryGuide,
+    component: BerryCalculator,
   },
 ]
 

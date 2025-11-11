@@ -137,15 +137,15 @@ const berryInfos: BerryData[] = [
   ['Ganlon Berry', 67, 5202, [['Very Dry', 'Plain Sweet', 'Very Bitter']], 11.5],
   ['Apicot Berry', 67, 5205, [['Plain Spicy', 'Very Dry', 'Very Sour']], 11.5],
 ]
-class Seed {
+export class Seed {
   name: string
   id: string
   price: Decimal
 
-  constructor(name: string, id: string) {
+  constructor(name: string, id: string, price: Decimal) {
     this.name = name
     this.id = id
-    this.price = new Decimal(0)
+    this.price = price
   }
 }
 
@@ -154,7 +154,7 @@ export class Berry {
   custs: number[]
   seedMix: string[][]
   id = 0
-  value = 0
+  value = Decimal(0)
   time = 0
   totalProfit = new Decimal(0)
   dailyProfit = new Decimal(0)
@@ -167,7 +167,7 @@ export class Berry {
     this.totalProfit = new Decimal(0)
     this.dailyProfit = new Decimal(0)
     this.averageYield = new Decimal(0)
-    this.value = 0
+    this.value = Decimal(0)
 
     if (seedMix) {
       this.seedMix = seedMix
@@ -178,18 +178,65 @@ export class Berry {
 }
 
 const seeds = [
-  new Seed('Plain Spicy', '1030'),
-  new Seed('Plain Dry', '1032'),
-  new Seed('Plain Sweet', '1034'),
-  new Seed('Plain Bitter', '1036'),
-  new Seed('Plain Sour', '1038'),
+  new Seed('Plain Spicy', '1030', Decimal(0)),
+  new Seed('Plain Dry', '1032', Decimal(0)),
+  new Seed('Plain Sweet', '1034', Decimal(0)),
+  new Seed('Plain Bitter', '1036', Decimal(0)),
+  new Seed('Plain Sour', '1038', Decimal(0)),
 
-  new Seed('Very Spicy', '1031'),
-  new Seed('Very Dry', '1033'),
-  new Seed('Very Sweet', '1035'),
-  new Seed('Very Bitter', '1037'),
-  new Seed('Very Sour', '1039'),
+  new Seed('Very Spicy', '1031', Decimal(0)),
+  new Seed('Very Dry', '1033', Decimal(0)),
+  new Seed('Very Sweet', '1035', Decimal(0)),
+  new Seed('Very Bitter', '1037', Decimal(0)),
+  new Seed('Very Sour', '1039', Decimal(0)),
 ]
+
+export function calculate(berryName: String, seedsCalc: Seed[], value:Decimal) {
+  var berryList = calcCustsSingle(berryName, seedsCalc)
+  console.log(berryList)
+  for (let berry of berryList) {
+    priceMix(berry)
+  }
+  applyInfos(berryList)
+  applyValue(berryList, value)
+  calcProfit(berryList)
+  return berryList
+}
+
+function calcCustsSingle(berryName: String, items: Seed[]) {
+  var recipeList: Berry[] = []
+  var price = 0
+  var priceList: number[] = []
+  for (let berry of berryInfos) {
+    if (berry[0] == berryName) {
+      for (let seedmix of berry[3] ?? []) {
+        price = 0
+        for (let seed of seedmix) {
+          for (let item of items) {
+            if (item.name == seed) {
+              if(item.price == Decimal(0) ){
+                item.price = Decimal(999999)
+              }
+              price += Number(item.price)
+            }
+          }
+        }
+        priceList.push(price)
+      }
+      recipeList.push(new Berry(berry[0], priceList, berry[3]))
+    }
+
+    priceList = []
+  }
+  
+  return recipeList
+}
+
+function applyValue(berryList:Berry[], value:Decimal){
+  if(berryList[0]){
+    berryList[0].value = value
+  }
+}
 
 export async function start() {
   console.clear()
@@ -199,12 +246,10 @@ export async function start() {
     priceMix(berry)
   }
   applyInfos(berryList)
-  applyValue(berryList)
+  applyValues(berryList)
   calcProfit(berryList)
   order(berryList)
   return berryList
-  //console.log(berryList)
-  //console.log(berryList.find((b) => b.name === 'Pamtre Berry')?.dailyProfit.toFixed(2))
 }
 function getSeedPrices() {
   return fetch('https://apis.fiereu.de/pokemmoprices/v1/items')
@@ -276,7 +321,7 @@ function applyInfos(berryList: Berry[]) {
   }
 }
 
-function applyValue(berryList: Berry[]) {
+function applyValues(berryList: Berry[]) {
   for (let info of itemData) {
     for (let berry of berryList) {
       if (info.item_id == berry.id) {
@@ -300,15 +345,6 @@ function calcProfit(berryList: Berry[]) {
   }
 }
 
-
 function order(berryList: Berry[]) {
-  berryList = berryList.sort(function (a, b) {
-    if (Number(a.dailyProfit) > Number(b.dailyProfit)) {
-      return -1
-    } else if (Number(a.dailyProfit) < Number(b.dailyProfit)) {
-      return 1
-    } else {
-      return 0
-    }
-  })
+  berryList.sort((a, b) => b.dailyProfit.comparedTo(a.dailyProfit))
 }

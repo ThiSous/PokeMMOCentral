@@ -1,18 +1,22 @@
 <script setup lang="ts">
-import { Berry } from '@/scripts/BerryGuide'
-import type Decimal from 'decimal.js';
+import { Berry } from '@/scripts/BerryCalculator'
+import type Decimal from 'decimal.js'
 defineProps<{
   berry: Berry
 }>()
 function formatNumberBR(value: Decimal) {
-  return new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(value.toNumber())
+  return new Intl.NumberFormat('pt-BR', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(value.toNumber())
 }
 </script>
 
 <template>
   <div class="table-item">
     <p>{{ berry.name }}</p>
-    <p>{{  berry.seedMix[0]?.join(', ')?? '' }}</p>
+    <p>{{ berry.value }}</p>
+    <p>{{ berry.seedMix[0]?.join(', ') ?? '' }}</p>
     <p>{{ formatNumberBR(berry.totalProfit) }}</p>
     <p>{{ formatNumberBR(berry.dailyProfit) }}</p>
   </div>

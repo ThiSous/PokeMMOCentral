@@ -1,6 +1,11 @@
 
-.gym-symbol {
+.opt-img {
+  width: 62px;
   height: 62px;
+  flex-shrink: 0;
+}
+.opt-symbol {
+  height: 100%;
 }
 .banner {
   flex-direction: column;
@@ -21,5 +26,7 @@
   .expandable-label {
     flex-wrap: wrap;
   }
-
+  .opt-img{
+    display:none;
+  }
 }

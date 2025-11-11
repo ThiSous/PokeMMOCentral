@@ -1,8 +1,13 @@
 .table-item {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  width: 100%;
+  min-width:700px;
+  p{
+    padding: 5px;
+  }
 }
 .bg-even {
   background-color: var(--color-background-soft);

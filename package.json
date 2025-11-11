@@ -24,6 +24,7 @@
     "@tsconfig/node22": "^22.0.2",
     "@types/decimal.js": "^0.0.32",
     "@types/node": "^22.18.6",
+    "@types/vue": "^1.0.31",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
     "npm-run-all2": "^8.0.4",

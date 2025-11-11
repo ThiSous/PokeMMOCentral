@@ -19,23 +19,27 @@ const themeImage = computed(() =>
     <h1 class="title">Bem-vindo ao PokeMMO Central</h1>
     <h2 class="title">Escolha a sua seção:</h2>
     <div class="expandable-label">
-      <img
-        class="gym-symbol"
-        src="https://archives.bulbagarden.net/media/upload/e/e2/Dream_Leppa_Berry_Sprite.png"
-        alt="Leppa Sprite"
-      />
+      <div class="opt-img">
+        <img
+          class="opt-symbol"
+          src="https://archives.bulbagarden.net/media/upload/e/e2/Dream_Leppa_Berry_Sprite.png"
+          alt="Leppa Berry Sprite"
+        />
+      </div>
       <ExpandableSection openLabel="▼ Farms" closeLabel="▲ Farms">
         <ul>
-          <li><router-link to="/BerryGuide">Farm de berries</router-link></li>
+          <li><router-link to="/Berry-Calculator">Farm de berries</router-link></li>
         </ul>
       </ExpandableSection>
     </div>
     <div class="expandable-label">
-      <img
-        class="gym-symbol"
-        src="https://play.pokemonshowdown.com/sprites/trainers/brock.png"
-        alt="Brock Sprite"
-      />
+      <div class="opt-img">
+        <img
+          class="opt-symbol"
+          src="https://play.pokemonshowdown.com/sprites/trainers/brock.png"
+          alt="Brock Sprite"
+        />
+      </div>
       <ExpandableSection openLabel="▼ Gym Rerun" closeLabel="▲ Gym Rerun">
         <h2>Six Pillars</h2>
         <p>Six Pillars é um time de médio custo e alto retorno.</p>
