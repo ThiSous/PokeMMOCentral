@@ -5,7 +5,9 @@
 .expand-btn {
   background: var(--color-background);
   color: var(--color-text);
-  border: none;
+  border: dashed;
+  border-width: 1px;
+  border-color: var(--color-expandable);
   padding: 0.9rem 1.2rem;
   border-radius: 6px;
   font-weight: bold;

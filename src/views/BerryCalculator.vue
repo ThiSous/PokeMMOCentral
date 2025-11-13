@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TableItem from '@/components/TableItem.vue'
-import { start, Berry, calculate, Seed } from '@/scripts/BerryCalculator'
+import { automaticTable, Berry, calculate, Seed } from '@/scripts/BerryCalculator'
 import Decimal from 'decimal.js'
 import { onMounted, ref } from 'vue'
 import ExpandableSection from '@/components/ExpandableSection.vue'
@@ -9,7 +9,7 @@ const berryList = ref<Berry[]>([])
 const berryCalc = ref<Berry[]>([])
 
 onMounted(async () => {
-  const berries = await start()
+  const berries = await automaticTable()
   berryList.value = berries
 })
 
@@ -52,6 +52,7 @@ function calc() {
 <template>
   <div class="background">
     <ExpandableSection openLabel="▼ Informações adicionais" closeLabel="▲ Informações adicionais">
+      <h1 class="title">Funcionamento:</h1>
       <p>
         Informe o valor da berry no mercado assim como das sementes que quer usar, caso não saiba
         qual mistura de sementes é a melhor pode passar o preço de todas que a calculadora irá
@@ -71,6 +72,70 @@ function calc() {
         <p>Bitter - Amargo</p>
         <p>Dry - Seco</p>
       </div>
+      <br />
+      <h1 class="title">Cálculos:</h1>
+      <p>Leve em consideração:</p>
+      <br />
+      <p>
+        1- A base para os cálculos levam em consideração uma conta em unova com Milstraton +
+        Abundant Shrine, o que totaliza 156 lugares plantaveis.
+      </p>
+      <p>2- Cada berry tem sua própria média de frutos que gera.</p>
+      <p>3- Existem grupos de tempo diferente de crescimento entre as berries.</p>
+      <p>4- Cada berry utiliza de combinação de sementes diferentes.</p>
+      <p>5- Cada berry tem valor diferente no GTL.</p>
+      <br />
+      <p>Separando o cálculo por partes teremos:</p>
+      <p>1- Cálculo de <span style="font-weight: bold">custo</span> para um slot de plantação:</p>
+      <ul>
+        <li>Semente 1 (Valor no GTL) + Semente 2 (Valor no GTL) + Semente 3 (Valor no GTL).</li>
+      </ul>
+      <br />
+      <p>
+        2- Cálculo de <span style="font-weight: bold">lucro bruto</span> para um slot de plantação:
+      </p>
+      <ul>
+        <li>Média de berries * Berry (Valor no GTL)</li>
+      </ul>
+      <br />
+      <p>
+        3- Cálculo de <span style="font-weight: bold">lucro líquido</span> para um slot de
+        plantação:
+      </p>
+      <ul>
+        <li>Lucro Bruto - Custo</li>
+      </ul>
+      <br />
+      <p>
+        4- Cálculo de <span style="font-weight: bold">lucro líquido para toda a plantação</span>
+      </p>
+      <ul>
+        <li>Lucro líquido * 156</li>
+      </ul>
+      <p>
+        É importante lembrar que berries tem tempos de crescimento diferentes, portanto o cálculo
+        segue para padronização de tempo
+      </p>
+      <br />
+      <p>
+        5- Cálculo de
+        <span style="font-weight: bold">lucro líquido para toda a plantação por hora</span>
+      </p>
+      <ul>
+        <li>Lucro líquido / Tempo de crescimento</li>
+      </ul>
+      <br />
+      <p>
+        6- Cálculo de
+        <span style="font-weight: bold">lucro líquido para toda a plantação por dia</span>
+      </p>
+      <ul>
+        <li>Lucro líquido por hora * 24</li>
+      </ul>
+      <br />
+      <p>7- Podemos reduzir essas funções para:</p>
+      <p>(Valor da berry * Média da colheita - Custo) * 156 / Tempo de crescimento * 24</p>
+      <br />
     </ExpandableSection>
     <br />
     <h1 style="align-self: center">Calculadora</h1>
@@ -197,10 +262,12 @@ function calc() {
     <div class="table">
       <div v-if="isBerriesCalc" class="table-header">
         <p>Berry</p>
-        <p>Valor no market</p>
+        <p>Valor (GTL)</p>
+        <p>Quantidade (GTL)</p>
         <p>Sementes</p>
-        <p>Lucro total</p>
+        <!--<p>Lucro total</p>-->
         <p>Lucro diário</p>
+        <p>Horas</p>
       </div>
       <TableItem
         v-if="isBerriesCalc"
@@ -231,10 +298,12 @@ function calc() {
     <div class="table">
       <div class="table-header">
         <p>Berry</p>
-        <p>Valor no market</p>
+        <p>Valor (GTL)</p>
+        <p>Quantidade (GTL)</p>
         <p>Sementes</p>
-        <p>Lucro total</p>
+        <!--<p>Lucro total</p>-->
         <p>Lucro diário</p>
+        <p>Horas</p>
       </div>
       <TableItem
         v-for="(berry, index) in berryList"

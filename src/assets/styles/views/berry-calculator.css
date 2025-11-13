@@ -3,7 +3,7 @@
   min-width: 700px;
   display: grid;
   row-gap: 25px;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   p {

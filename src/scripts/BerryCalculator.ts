@@ -159,15 +159,11 @@ export class Berry {
   totalProfit = new Decimal(0)
   dailyProfit = new Decimal(0)
   averageYield = new Decimal(0)
+  quantity = 0
 
   constructor(name: string, price: number[], seedMix: string[][]) {
     this.name = name
     this.custs = price
-    this.time = 0
-    this.totalProfit = new Decimal(0)
-    this.dailyProfit = new Decimal(0)
-    this.averageYield = new Decimal(0)
-    this.value = Decimal(0)
 
     if (seedMix) {
       this.seedMix = seedMix
@@ -191,9 +187,8 @@ const seeds = [
   new Seed('Very Sour', '1039', Decimal(0)),
 ]
 
-export function calculate(berryName: String, seedsCalc: Seed[], value:Decimal) {
+export function calculate(berryName: String, seedsCalc: Seed[], value: Decimal) {
   var berryList = calcCustsSingle(berryName, seedsCalc)
-  console.log(berryList)
   for (let berry of berryList) {
     priceMix(berry)
   }
@@ -214,7 +209,7 @@ function calcCustsSingle(berryName: String, items: Seed[]) {
         for (let seed of seedmix) {
           for (let item of items) {
             if (item.name == seed) {
-              if(item.price == Decimal(0) ){
+              if (item.price == Decimal(0)) {
                 item.price = Decimal(999999)
               }
               price += Number(item.price)
@@ -228,17 +223,17 @@ function calcCustsSingle(berryName: String, items: Seed[]) {
 
     priceList = []
   }
-  
+
   return recipeList
 }
 
-function applyValue(berryList:Berry[], value:Decimal){
-  if(berryList[0]){
+function applyValue(berryList: Berry[], value: Decimal) {
+  if (berryList[0]) {
     berryList[0].value = value
   }
 }
 
-export async function start() {
+export async function automaticTable() {
   console.clear()
   var seeds = await getSeedPrices()
   var berryList = calcCusts(seeds)
@@ -326,6 +321,7 @@ function applyValues(berryList: Berry[]) {
     for (let berry of berryList) {
       if (info.item_id == berry.id) {
         berry.value = info.price
+        berry.quantity = info.quantity
       }
     }
   }
