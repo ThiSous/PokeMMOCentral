@@ -1,6 +1,6 @@
 .table-item {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   width: 100%;
@@ -16,10 +16,3 @@
 .bg-odd {
   background-color: var(--color-background);
 }
-input, select {
-    color: var(--color-text);
-    background-color: var(--color-background);
-    border-radius: 3px;
-    border-style: solid;
-    width: 100%;
-  }

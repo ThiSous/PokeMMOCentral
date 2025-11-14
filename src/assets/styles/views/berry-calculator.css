@@ -3,11 +3,27 @@
   min-width: 700px;
   display: grid;
   row-gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  p {
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+  }
+}
+.table-header-calc {
+  margin-bottom: 10px;
+  min-width: 700px;
+  display: grid;
+  row-gap: 25px;
   grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   p {
+    text-align: center;
     font-size: 20px;
+    padding: 1rem;
   }
 }
 .btn-calc{

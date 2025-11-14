@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import TableItem from '@/components/TableItem.vue'
-import { automaticTable, Berry, calculate, Seed } from '@/scripts/BerryCalculator'
+import { automaticTable, Berry, calculate, Seed, reCalc } from '@/scripts/BerryCalculator'
 import Decimal from 'decimal.js'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, toRaw } from 'vue'
 import ExpandableSection from '@/components/ExpandableSection.vue'
+import TableItemCalc from '@/components/TableItemCalc.vue'
 
 const berryList = ref<Berry[]>([])
 const berryCalc = ref<Berry[]>([])
@@ -46,6 +47,17 @@ function calc() {
   const berriesCalc = calculate(berryName.value, seeds, berryValue.value)
   berryCalc.value = berriesCalc
   isBerriesCalc = true
+}
+
+function update(berry: Berry) {
+  berryList.value = berryList.value.map(b => {
+    if (b.id === berry.id) {
+      return { ...b, value: berry.value }
+    }
+    return b
+  })
+
+  berryList.value = reCalc(berryList.value)
 }
 </script>
 
@@ -135,6 +147,12 @@ function calc() {
       <br />
       <p>7- Podemos reduzir essas funções para:</p>
       <p>(Valor da berry * Média da colheita - Custo) * 156 / Tempo de crescimento * 24</p>
+      <br />
+      <p>
+        8- No caso de
+        <span style="font-weight: bold">lucro líquido para toda a plantação por dia (GTL)</span> devemos remover 5% do valor bruto que é custo da listagem, assim com a função ficando
+      </p>
+      <p>(Valor da berry * Média da colheita - Custo) * 156 / Tempo de crescimento * 24 * 0.95</p>
       <br />
     </ExpandableSection>
     <br />
@@ -260,16 +278,15 @@ function calc() {
     </div>
     <br />
     <div class="table">
-      <div v-if="isBerriesCalc" class="table-header">
+      <div v-if="isBerriesCalc" class="table-header-calc">
         <p>Berry</p>
         <p>Valor (GTL)</p>
-        <p>Quantidade (GTL)</p>
         <p>Sementes</p>
-        <!--<p>Lucro total</p>-->
-        <p>Lucro diário</p>
+        <p>Lucro diário (GTL)</p>
+        <p>Lucro diário (NPC)</p>
         <p>Horas</p>
       </div>
-      <TableItem
+      <TableItemCalc
         v-if="isBerriesCalc"
         v-for="(berryCalc, index) in berryCalc"
         :key="berryCalc.id"
@@ -302,10 +319,12 @@ function calc() {
         <p>Quantidade (GTL)</p>
         <p>Sementes</p>
         <!--<p>Lucro total</p>-->
-        <p>Lucro diário</p>
+        <p>Lucro diário (GTL)</p>
+        <p>Lucro diário (NPC)</p>
         <p>Horas</p>
       </div>
       <TableItem
+        @update="update($event)"
         v-for="(berry, index) in berryList"
         :key="berry.id"
         :berry="berry"
