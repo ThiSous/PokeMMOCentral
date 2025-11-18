@@ -1,0 +1,111 @@
+.city-title {
+  font-size: 24px;
+}
+h1,
+h2 {
+  font-weight: bold;
+}
+
+.map-box {
+  position: relative;
+  width: 50%;
+}
+
+.map {
+  width: 100%;
+  display: block;
+}
+
+.click-box {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 17, 0, 0);
+  background: rgb(255, 0, 0, 0);
+  cursor: pointer;
+  
+}
+
+.click-box:hover {
+  border: 2px solid rgba(255, 0, 0, 0.9);
+  background: rgba(255, 17, 0, 0.3);
+  
+}
+
+.water {
+  color: #3399ff;
+}
+.fire {
+  color: #ff4422;
+}
+.grass {
+  color: #55cc55;
+}
+.electric {
+  color: #ffcc33;
+}
+.ice {
+  color: #66ccff;
+}
+.fighting {
+  color: #bb5544;
+}
+.poison {
+  color: #aa5599;
+}
+.ground {
+  color: #ddbb55;
+}
+.fly {
+  color: #668eaf;
+}
+.psychic {
+  color: #ff5599;
+}
+.bug {
+  color: #aabb22;
+}
+.rock {
+  color: #bbaa66;
+}
+.ghost {
+  color: #3b3b63;
+}
+.dragon {
+  color: #7766ee;
+}
+.dark {
+  color: #775544;
+}
+.steel {
+  color: #aaaabb;
+}
+.fairy {
+  color: #ee99ee;
+}
+.normal {
+  color: #aaaa99;
+}
+.heal {
+  color: #0fa501;
+}
+.kanto {
+  color: #a7182e;
+}
+.johto {
+  color: #445740;
+}
+.hoenn {
+  color: #013a66;
+}
+.sinnoh {
+  color: #bc9648;
+}
+.unova {
+  color: #676967;
+}
+
+.locator-maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 import BasicRoute from '@/views/BasicRoute.vue'
 import BerryCalculator from '@/views/BerryCalculator.vue'
+import LocatorDex from '@/views/LocatorDex.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -25,6 +26,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/Berry-Calculator',
     name: 'Guia de berries',
     component: BerryCalculator,
+  },
+  {
+    path: '/Rota-Dex',
+    name: 'Dex de Rotas',
+    component: LocatorDex,
   },
 ]
 

@@ -1,0 +1,854 @@
+[
+  {
+    "name": "Cheri Berry",
+    "time": 16,
+    "id": 5149,
+    "seedMix": [
+      [
+        "Plain Spicy",
+        "Plain Spicy",
+        "Plain Spicy"
+      ],
+      [
+        "Very Spicy",
+        "Plain Spicy"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "400"
+  },
+  {
+    "name": "Razz Berry",
+    "time": 16,
+    "id": 5164,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Plain Dry"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "500"
+  },
+  {
+    "name": "Bluk Berry",
+    "time": 16,
+    "id": 5165,
+    "seedMix": [
+      [
+        "Plain Sweet",
+        "Plain Sweet",
+        "Plain Dry"
+      ],
+      [
+        "Very Sweet",
+        "Plain Dry"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "500"
+  },
+  {
+    "name": "Oran Berry",
+    "time": 16,
+    "id": 5155,
+    "seedMix": [
+      [
+        "Plain Bitter",
+        "Plain Sour",
+        "Plain Dry"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "400"
+  },
+  {
+    "name": "Nanab Berry",
+    "time": 16,
+    "id": 5166,
+    "seedMix": [
+      [
+        "Plain Sweet",
+        "Plain Sweet",
+        "Plain Bitter"
+      ],
+      [
+        "Very Sweet",
+        "Plain Bitter"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "500"
+  },
+  {
+    "name": "Pinap Berry",
+    "time": 16,
+    "id": 5168,
+    "seedMix": [
+      [
+        "Plain Spicy",
+        "Plain Sour",
+        "Plain Sour"
+      ],
+      [
+        "Plain Spicy",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "500"
+  },
+  {
+    "name": "Persim Berry",
+    "time": 16,
+    "id": 5156,
+    "seedMix": [
+      [
+        "Plain Dry",
+        "Plain Spicy",
+        "Plain Sweet"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "400"
+  },
+  {
+    "name": "Chesto Berry",
+    "time": 16,
+    "id": 5150,
+    "seedMix": [
+      [
+        "Plain Dry",
+        "Plain Dry",
+        "Plain Dry"
+      ],
+      [
+        "Very Dry",
+        "Plain Dry"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "400"
+  },
+  {
+    "name": "Pecha Berry",
+    "time": 16,
+    "id": 5151,
+    "seedMix": [
+      [
+        "Plain Sweet",
+        "Plain Sweet",
+        "Plain Sweet"
+      ],
+      [
+        "Very Sweet",
+        "Plain Sweet"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "400"
+  },
+  {
+    "name": "Rawst Berry",
+    "time": 16,
+    "id": 5152,
+    "seedMix": [
+      [
+        "Plain Bitter",
+        "Plain Bitter",
+        "Plain Bitter"
+      ],
+      [
+        "Very Bitter",
+        "Plain Bitter"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "400"
+  },
+  {
+    "name": "Aspear Berry",
+    "time": 16,
+    "id": 5153,
+    "seedMix": [
+      [
+        "Plain Sour",
+        "Plain Sour",
+        "Plain Sour"
+      ],
+      [
+        "Very Sour",
+        "Plain Sour"
+      ]
+    ],
+    "mediumYield": 4.5,
+    "npcValue": "400"
+  },
+  {
+    "name": "Magost Berry",
+    "time": 20,
+    "id": 5176,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Plain Bitter",
+        "Plain Sweet"
+      ]
+    ],
+    "mediumYield": 5.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Cornn Berry",
+    "time": 20,
+    "id": 5175,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Plain Sweet",
+        "Plain Dry"
+      ]
+    ],
+    "mediumYield": 5.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Leppa Berry",
+    "time": 20,
+    "id": 5154,
+    "seedMix": [
+      [
+        "Plain Sweet",
+        "Very Spicy",
+        "Plain Bitter"
+      ]
+    ],
+    "mediumYield": 6,
+    "npcValue": "600"
+  },
+  {
+    "name": "Nomel Berry",
+    "time": 20,
+    "id": 5178,
+    "seedMix": [
+      [
+        "Very Sour",
+        "Plain Sour",
+        "Plain Spicy"
+      ]
+    ],
+    "mediumYield": 5.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Iapapa Berry",
+    "time": 20,
+    "id": 5163,
+    "seedMix": [
+      [
+        "Very Sour",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 5.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Figy Berry",
+    "time": 20,
+    "id": 5159,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Very Spicy"
+      ]
+    ],
+    "mediumYield": 5.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Wiki Berry",
+    "time": 20,
+    "id": 5160,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Very Dry"
+      ]
+    ],
+    "mediumYield": 5.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Mago Berry",
+    "time": 20,
+    "id": 5161,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Very Sweet"
+      ]
+    ],
+    "mediumYield": 5.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Aguav Berry",
+    "time": 20,
+    "id": 5162,
+    "seedMix": [
+      [
+        "Very Bitter",
+        "Very Bitter"
+      ]
+    ],
+    "mediumYield": 5.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Watmel Berry",
+    "time": 42,
+    "id": 5181,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Very Sweet",
+        "Plain Bitter"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Enigma Berry",
+    "time": 42,
+    "id": 5208,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Very Spicy",
+        "Very Dry"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Belue Berry",
+    "time": 42,
+    "id": 5183,
+    "seedMix": [
+      [
+        "Very Sour",
+        "Plain Spicy",
+        "Plain Sour"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Spelon Berry",
+    "time": 42,
+    "id": 5179,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Very Spicy",
+        "Plain Dry"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Durin Berry",
+    "time": 42,
+    "id": 5182,
+    "seedMix": [
+      [
+        "Very Bitter",
+        "Very Bitter",
+        "Plain Sour"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Occa Berry",
+    "time": 42,
+    "id": 5184,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Plain Spicy",
+        "Very Sweet"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Shuca Berry",
+    "time": 42,
+    "id": 5191,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Plain Sweet",
+        "Very Spicy"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Coba Berry",
+    "time": 42,
+    "id": 5192,
+    "seedMix": [
+      [
+        "Very Bitter",
+        "Plain Bitter",
+        "Very Dry"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Pamtre Berry",
+    "time": 42,
+    "id": 5180,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Very Dry",
+        "Plain Sweet"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Yache Berry",
+    "time": 42,
+    "id": 5188,
+    "seedMix": [
+      [
+        "Very Sour",
+        "Plain Sour",
+        "Very Dry"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Kasib Berry",
+    "time": 42,
+    "id": 5196,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Plain Sweet",
+        "Very Dry"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Wacan Berry",
+    "time": 42,
+    "id": 5186,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Plain Sweet",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Tanga Berry",
+    "time": 42,
+    "id": 5194,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Plain Spicy",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Rowap Berry",
+    "time": 42,
+    "id": 5212,
+    "seedMix": [
+      [
+        "Very Sour",
+        "Very Sour",
+        "Very Spicy"
+      ]
+    ],
+    "mediumYield": 8.5,
+    "npcValue": "700"
+  },
+  {
+    "name": "Rindo Berry",
+    "time": 42,
+    "id": 5187,
+    "seedMix": [
+      [
+        "Very Bitter",
+        "Plain Bitter",
+        "Very Spicy"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Payapa Berry",
+    "time": 42,
+    "id": 5193,
+    "seedMix": [
+      [
+        "Very Sour",
+        "Plain Sour",
+        "Very Sweet"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Passho Berry",
+    "time": 42,
+    "id": 5185,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Very Bitter",
+        "Plain Dry"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Kebia Berry",
+    "time": 42,
+    "id": 5190,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Plain Dry",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Haban Berry",
+    "time": 42,
+    "id": 5197,
+    "seedMix": [
+      [
+        "Very Bitter",
+        "Plain Bitter",
+        "Very Sweet"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Colbur Berry",
+    "time": 42,
+    "id": 5198,
+    "seedMix": [
+      [
+        "Very Sour",
+        "Plain Sour",
+        "Very Spicy"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Chople Berry",
+    "time": 42,
+    "id": 5189,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Plain Spicy",
+        "Very Bitter"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Chilan Berry",
+    "time": 42,
+    "id": 5200,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Plain Dry",
+        "Very Sweet"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Pomeg Berry",
+    "time": 44,
+    "id": 5169,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Plain Bitter",
+        "Plain Spicy"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "600"
+  },
+  {
+    "name": "Kelpsy Berry",
+    "time": 44,
+    "id": 5170,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Plain Sour",
+        "Plain Dry"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "600"
+  },
+  {
+    "name": "Qualot Berry",
+    "time": 44,
+    "id": 5171,
+    "seedMix": [
+      [
+        "Plain Spicy",
+        "Very Sweet",
+        "Plain Sweet"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "600"
+  },
+  {
+    "name": "Hondew Berry",
+    "time": 44,
+    "id": 5172,
+    "seedMix": [
+      [
+        "Plain Dry",
+        "Very Bitter",
+        "Plain Bitter"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "600"
+  },
+  {
+    "name": "Grepa Berry",
+    "time": 44,
+    "id": 5173,
+    "seedMix": [
+      [
+        "Plain Sweet",
+        "Very Sour",
+        "Plain Sour"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "600"
+  },
+  {
+    "name": "Tamato Berry",
+    "time": 44,
+    "id": 5174,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Plain Dry",
+        "Plain Spicy"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "600"
+  },
+  {
+    "name": "Lum Berry",
+    "time": 44,
+    "id": 5157,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Very Spicy",
+        "Very Sweet"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "800"
+  },
+  {
+    "name": "Sitrus Berry",
+    "time": 44,
+    "id": 5158,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Very Bitter",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "800"
+  },
+  {
+    "name": "Custap Berry",
+    "time": 44,
+    "id": 5210,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Very Sweet",
+        "Very Dry"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Jaboca Berry",
+    "time": 44,
+    "id": 5211,
+    "seedMix": [
+      [
+        "Very Bitter",
+        "Very Bitter",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 8,
+    "npcValue": "700"
+  },
+  {
+    "name": "Petaya Berry",
+    "time": 67,
+    "id": 5204,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Very Bitter",
+        "Plain Sour"
+      ]
+    ],
+    "mediumYield": 11.5,
+    "npcValue": "550"
+  },
+  {
+    "name": "Liechi Berry",
+    "time": 67,
+    "id": 5201,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Plain Dry",
+        "Very Sweet"
+      ]
+    ],
+    "mediumYield": 11.5,
+    "npcValue": "550"
+  },
+  {
+    "name": "Starf Berry",
+    "time": 67,
+    "id": 5207,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Very Sweet",
+        "Very Bitter"
+      ]
+    ],
+    "mediumYield": 12,
+    "npcValue": "600"
+  },
+  {
+    "name": "Lansat Berry",
+    "time": 67,
+    "id": 5206,
+    "seedMix": [
+      [
+        "Very Spicy",
+        "Very Sweet",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 11.5,
+    "npcValue": "600"
+  },
+  {
+    "name": "Salac Berry",
+    "time": 67,
+    "id": 5203,
+    "seedMix": [
+      [
+        "Very Sweet",
+        "Plain Bitter",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 11.5,
+    "npcValue": "550"
+  },
+  {
+    "name": "Ganlon Berry",
+    "time": 67,
+    "id": 5202,
+    "seedMix": [
+      [
+        "Very Dry",
+        "Plain Sweet",
+        "Very Bitter"
+      ]
+    ],
+    "mediumYield": 11.5,
+    "npcValue": "550"
+  },
+  {
+    "name": "Apicot Berry",
+    "time": 67,
+    "id": 5205,
+    "seedMix": [
+      [
+        "Plain Spicy",
+        "Very Dry",
+        "Very Sour"
+      ]
+    ],
+    "mediumYield": 11.5,
+    "npcValue": "550"
+  }
+]

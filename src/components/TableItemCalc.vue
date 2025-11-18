@@ -20,7 +20,7 @@ function formatNumberBR(value: Decimal) {
     <p>{{ berry.value }}</p>
     <p>{{ berry.seedMix[0]?.join(', ') ?? '' }}</p>
     <p>{{ formatNumberBR(berry.dailyProfit) }}</p>
-    <p>{{ formatNumberBR(berry.npcTotalProfit) }}</p>
+    <p>{{ formatNumberBR(berry.npcDailyProfit) }}</p>
     <p>{{ berry.time }} Hrs</p>
   </div>
 </template>

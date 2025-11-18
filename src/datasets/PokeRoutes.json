@@ -1,0 +1,67 @@
+[
+  {
+    "id": 999,
+    "name": "pallet",
+    "region": "kanto",
+    "isCave": true,
+    "cavePokes": [
+      {
+        "dexNumber": 1,
+        "name": "Bulbassauro",
+        "rarity": "very common",
+        "time": "all",
+        "horde": false,
+        "quantity": 1
+      },
+      {
+        "dexNumber": 1,
+        "name": "Bulbassauro",
+        "rarity": "very common",
+        "time": "all",
+        "horde": false,
+        "quantity": 1
+      }
+    ],
+    "surfPokes": [
+      
+    ],
+    "tallGrassPokes": [
+     
+    ],
+    "grassPokes": [
+      {
+        "dexNumber": 1,
+        "name": "Bulbassauro",
+        "rarity": "very common",
+        "time": "all",
+        "horde": false,
+        "quantity": 1
+      }
+    ],
+    "darkGrassPokes": [
+     
+    ],
+    "rockSmashPokes": [
+      
+    ],
+    "oldRod": [
+     
+    ],
+    "goodRod": [
+      
+    ],
+    "superRod": [
+     
+    ],
+    "headButtPokes": [
+      
+    ],
+    "specialPokes": [
+      {
+        "dexNumber": 1,
+        "name": "Bulbassauro",
+        "type": "dust"
+      }
+    ]
+  }
+]
